@@ -19,6 +19,6 @@ fwrite($file, $message ."\n");
 fwrite($file, "-------------------------------\n\n");
 
 fclose($file);
-header("location: http://localhost/Website/Turkie25/");
+header("location: https://turkie25.github.io/");
 
 ?>
