@@ -1,0 +1,134 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #3D0000;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #950101;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  /* text-align: center; */
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  /* line-height: 25px; */
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.LogoHaydo {
+    float: left;
+    width: 10%;
+  }
+
+.header a:hover {
+  background-color: #FF0000;
+  color: white;
+}
+
+.header a.active {
+  background-color: #FF0000;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+  }
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+.vidgrid {
+    display: grid;
+    height: 95vh;
+    width: 95vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+
+        ". milyon muhtar ."
+        ". miras texas ."
+        ". padisahin karakol ."
+        ". solo . ."
+
+    ;
+    gap: 5vh;
+    }
+
+h2 {
+    color: white;
+}
+
+.Milyon{
+    text-align: center;
+    margin-top: 5%;
+    grid-area: milyon;
+}
+
+.Milyon video{
+    height: 175px;
+    width: 100%;
+}
+
+
+.Muhtar{
+    text-align: center;
+    margin-top: 5%;
+    grid-area: muhtar;
+}
+
+.Miras{
+    text-align: center;
+    grid-area: miras;
+}
+
+.Texas{
+    text-align: center;
+    grid-area: texas;
+}
+
+.Texas video{
+    height: 175px;
+    width: 100%;
+}
+
+.Padisahin{
+    text-align: center;
+    grid-area: padisahin;
+}
+
+.Karakol{
+    text-align: center;
+    grid-area: karakol;
+}
+
+.Solo{
+    text-align: center;
+    grid-area: solo;
+}
