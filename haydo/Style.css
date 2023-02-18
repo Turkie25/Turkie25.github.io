@@ -169,6 +169,13 @@
     float: none;
   }
 
+  .vidgrid {
+    width: 92%;
+    margin-left: 4%;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+
   video {
     height: 25vh;
     width: 100%;
