@@ -115,69 +115,70 @@
   }
 }
 
-* {
-  box-sizing: border-box;
-}
+@media screen and (max-width: 501px) {
+  * {
+    box-sizing: border-box;
+  }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #3D0000;
-  overflow-x: hidden;
-}
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #3D0000;
+    overflow-x: hidden;
+  }
 
-.header {
-  overflow: hidden;
-  background-color: #950101;
-  padding: 20px 10px;
-  width: 100%;
-}
+  .header {
+    overflow: hidden;
+    background-color: #950101;
+    padding: 20px 10px;
+    width: 100%;
+  }
 
-.header a {
-  float: none;
-  color: white;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 4px;
-  display: block;
-  text-align: left;
-}
+  .header a {
+    float: none;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+    display: block;
+    text-align: left;
+  }
 
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
 
-.LogoHaydo {
-  float: left;
-  width: 10%;
-}
+  .LogoHaydo {
+    float: left;
+    width: 10%;
+  }
 
-.header a:hover {
-  background-color: #FF0000;
-  color: white;
-}
+  .header a:hover {
+    background-color: #FF0000;
+    color: white;
+  }
 
-.header a.active {
-  background-color: #FF0000;
-  color: white;
-}
+  .header a.active {
+    background-color: #FF0000;
+    color: white;
+  }
 
-.header-right {
-  float: none;
-}
+  .header-right {
+    float: none;
+  }
 
-video {
-  height: 25vh;
-  width: 100%;
-  border-radius: 25px;
-  background-color: black;
-}
+  video {
+    height: 25vh;
+    width: 100%;
+    border-radius: 25px;
+    background-color: black;
+  }
 
-h2 {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
 }
