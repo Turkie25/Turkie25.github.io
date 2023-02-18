@@ -181,6 +181,7 @@
     width: 100%;
     border-radius: 25px;
     background-color: black;
+    box-shadow: 6px 12px 20px 1px #950101;
   }
 
   h2 {
