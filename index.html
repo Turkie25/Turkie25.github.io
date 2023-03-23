@@ -8,11 +8,22 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./img/Profile-512.webp">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Furkan Öztürk Portfolio</title>
 </head>
 
 <body>
     <section class="section1">
+        <div class="darkmodeswitch">
+            <div class="toggle-switch">
+                <label class="switch-label">
+                    <input title="." onclick="myFunction()" type="checkbox" class="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
         <div class="Head">
             <div class="loader">
                 <svg viewBox="0 0 80 80">
@@ -31,17 +42,27 @@
                     <rect x="8" y="8" width="64" height="64"></rect>
                 </svg>
             </div>
+
+
         </div>
 
 
-        <h1>Furkan Öztürk</h1>
+        <h1 class="dark">Furkan Öztürk</h1>
         <h3>Software Developer</h3>
-        <p>Hi, my name is Furkan Öztürk. <br> I'm a Software Development student studying at Gilde ICT college in
+        <p class="homeP">Hi, my name is Furkan Öztürk. <br> I'm a Software Development student studying at Gilde ICT college in
             Roermond.
             At my school, we don't learn the normal way. We learn by mimicking the way you would normally work with a
             client. This way, we are better prepared to enter the workforce than regular students.
             I have worked mostly with PHP and Python, but I'm always eager to learn new things to widen my knowledge.
         </p><br><br>
+        <div class="darkmodeswitchMobile">
+            <div class="toggle-switch">
+                <label class="switch-label">
+                    <input title="." onclick="myFunction()" type="checkbox" class="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
         <div class="bntClass">
             <button onclick="scrollToSection()"> See more about me </button>
         </div>
@@ -86,7 +107,7 @@
                 </svg>
             </div>
         </div>
-        <h3>Programming languages I know</h3>
+        <h3 class="PL">Programming languages I know</h3>
         <div class="Code">
             <div class="CodeSub">
                 <svg viewBox="0 0 128 128">
@@ -158,7 +179,7 @@
                 </svg>
             </div>
         </div>
-        <h1>Contact me</h1>
+        <h1 class="contactme">Contact me</h1>
         <br><br><br><br><br><br><br>
         <div class="contact">
             <div class="main">

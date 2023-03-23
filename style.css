@@ -2,23 +2,38 @@
   body {
     background-color: #111111;
     overflow-x: hidden;
+    color: white;
+  }
+
+  .dark-mode {
+    background-color: white;
+    color: grey;
+  }
+
+  .darkmodeswitchMobile {
+    display: none;
   }
 
   .Head {
-    margin-top: 5%;
+    margin-top: -3%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .section1 {
-    height: 95vh;
+    height: 100vh;
     width: 100vw;
   }
 
   section {
-    height: 100vh;
+    height: 105vh;
     width: 100vw;
+  }
+
+  #Section4 {
+    margin-top: 20%;
+    height: 100vh;
   }
 
   .loader {
@@ -180,34 +195,32 @@
   }
 
   h1 {
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
-    font-size: 330%;
-    font-family: monospace;
+    margin-top: 4%;
+    font-size: 250%;
+    font-family: "Press Start 2P", cursive;
   }
 
   h3 {
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 150%;
-    font-family: monospace;
+    font-size: 100%;
+    font-family: "Press Start 2P", cursive;
   }
 
   p {
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    font-family: monospace;
+    font-family: "Press Start 2P", cursive;
     width: 65%;
-    font-size: 140%;
+    font-size: 90%;
+    line-height: 2;
     text-align: center;
   }
 
@@ -218,53 +231,89 @@
   }
 
   button {
-    --glow-color: rgb(255, 176, 176);
-    --glow-spread-color: rgba(255, 123, 123, 0.781);
-    --enhanced-glow-color: rgb(231, 206, 255);
-    --btn-color: rgb(136, 61, 61);
-    border: 0.25em solid var(--glow-color);
-    padding: 1em 3em;
-    color: var(--glow-color);
-    font-size: 15px;
-    font-weight: bold;
-    background-color: var(--btn-color);
-    border-radius: 1em;
-    outline: none;
-    box-shadow: 0 0 1em 0.25em var(--glow-color),
-      0 0 4em 1em var(--glow-spread-color),
-      inset 0 0 0.75em 0.25em var(--glow-color);
-    text-shadow: 0 0 0.5em var(--glow-color);
     position: relative;
-    font-family: monospace;
-    transition: all 0.3s;
-  }
-
-  button::after {
-    pointer-events: none;
-    content: "";
-    position: absolute;
-    top: 120%;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--glow-spread-color);
-    filter: blur(2em);
-    opacity: 0.7;
-    transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+    margin: 0;
+    padding: 0.8em 1em;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: "Press Start 2P", cursive;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
   }
 
   button:hover {
-    color: var(--btn-color);
-    background-color: var(--glow-color);
-    box-shadow: 0 0 1em 0.25em var(--glow-color),
-      0 0 4em 2em var(--glow-spread-color),
-      inset 0 0 0.75em 0.25em var(--glow-color);
+    animation: sh0 0.5s ease-in-out both;
   }
 
-  button:active {
-    box-shadow: 0 0 0.6em 0.25em var(--glow-color),
-      0 0 2.5em 2em var(--glow-spread-color),
-      inset 0 0 0.5em 0.25em var(--glow-color);
+  @keyframes sh0 {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+      transform: rotate(7deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+      transform: rotate(-7deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+
+  button:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+
+  button::before,
+  button::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0;
+    transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1),
+      opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+    z-index: -1;
+    transform: translate(100%, -25%) translate3d(0, 0, 0);
+  }
+
+  button:hover::before,
+  button:hover::after {
+    opacity: 0.15;
+    transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1),
+      opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+
+  button:hover::before {
+    transform: translate3d(50%, 0, 0) scale(0.9);
+  }
+
+  button:hover::after {
+    transform: translate(50%, 0) scale(1.1);
   }
 
   .CVbtn {
@@ -313,7 +362,7 @@
 
   strong {
     z-index: 2;
-    font-family: monospace;
+    font-family: "Press Start 2P", cursive;
     font-size: 16px;
     color: #ffffff;
     text-shadow: 0 0 4px white;
@@ -467,6 +516,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .main {
     display: flex;
     flex-direction: column;
@@ -603,6 +653,77 @@
   .card4:hover .discord {
     fill: white;
   }
+
+  .darkmodeswitch {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 2%;
+    margin-right: 4%;
+    /* margin-right: -60%; */
+  }
+
+  .toggle-switch {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+  }
+
+  .switch-label {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark);
+    border-radius: 25px;
+    cursor: pointer;
+    border: 3px solid var(--dark);
+  }
+
+  .checkbox {
+    position: absolute;
+    display: none;
+  }
+
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .checkbox:checked ~ .slider {
+    background-color: var(--light);
+  }
+
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+    box-shadow: inset 12px -4px 0px 0px var(--light);
+    background-color: var(--dark);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .checkbox:checked ~ .slider::before {
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+    background-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
 }
 
 /* mobile view */
@@ -610,7 +731,13 @@
   body {
     background-color: #111111;
     overflow-x: hidden;
+    color: white;
     /* overflow-y: hidden; */
+  }
+
+  .dark-mode {
+    background-color: white;
+    color: grey;
   }
 
   .Head {
@@ -626,7 +753,6 @@
 } */
 
   section {
-    /* font-family: sans-serif; */
     height: 100vh;
     width: 100vw;
   }
@@ -790,52 +916,50 @@
   }
 
   h1 {
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 15%;
-    font-size: 330%;
-    font-family: monospace;
+    font-size: 160%;
+    font-family: "Press Start 2P", cursive;
   }
 
   h3 {
     flex-wrap: wrap;
-    color: white;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 160%;
-    font-family: monospace;
+
+    font-size: 75%;
+    font-family: "Press Start 2P", cursive;
+  }
+
+  .PL {
+    margin-top: 15%;
   }
 
   #Section3 {
-    margin-top: -60%;
+    margin-top: -90%;
   }
 
   #Section4 {
-    margin-top: -10%;
+    margin-top: -5%;
     height: 80vh;
   }
 
   p {
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    font-family: monospace;
+    font-family: "Press Start 2P", cursive;
     width: 85%;
-    margin-top: 30%;
-    font-size: 140%;
+    margin-top: 10%;
+    font-size: 70%;
+    line-height: 2;
     text-align: center;
-  }
-
-  .bntClass {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   button {
@@ -888,7 +1012,7 @@
 
   strong {
     z-index: 2;
-    font-family: monospace;
+    font-family: "Press Start 2P", cursive;
     font-size: 16px;
     color: #ffffff;
     text-shadow: 0 0 4px white;
@@ -1032,7 +1156,6 @@
   .Code {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     gap: 10%;
     flex-wrap: wrap;
   }
@@ -1048,6 +1171,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 35%;
   }
   .main {
     display: flex;
@@ -1184,5 +1308,77 @@
 
   .card4:hover .discord {
     fill: white;
+  }
+
+  .darkmodeswitch {
+    display: none;
+  }
+
+  .darkmodeswitchMobile {
+    display: flex;
+    align-items: bottom;
+    justify-content: center;
+  }
+
+  .toggle-switch {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+  }
+
+  .switch-label {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark);
+    border-radius: 25px;
+    cursor: pointer;
+    border: 3px solid var(--dark);
+  }
+
+  .checkbox {
+    position: absolute;
+    display: none;
+  }
+
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .checkbox:checked ~ .slider {
+    background-color: var(--light);
+  }
+
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+    box-shadow: inset 12px -4px 0px 0px var(--light);
+    background-color: var(--dark);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .checkbox:checked ~ .slider::before {
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+    background-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 }
