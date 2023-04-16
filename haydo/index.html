@@ -1,79 +1,256 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="Style.css" />
-    <link rel="icon" href="images/Haydo.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <Title>Hall of Haydo</Title>
-  </head>
 
-  <body>
-    <div class="header">
-      <a href="" class="logo"><img class="LogoHaydo" src="./images/Haydo.png" alt="Logo of haydo" />Hall of Haydo</a>
-      <div class="header-right">
-        <a class="active" href="">Home</a>
-        <a href="#about">About</a>
-      </div>
+<head>
+  <link rel="stylesheet" href="./StyleMobile.css" />
+  <link rel="stylesheet" href="./Style.css" />
+  <link rel="icon" href="images/Haydo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <Title>Hall of Haydo</Title>
+</head>
+
+<body>
+  <div class="header">
+    <a href="" class="logo"><img class="LogoHaydo" src="./images/Haydo.png" alt="Logo of haydo" />Hall of Haydo</a>
+    <div id="HeaderKnoppen" class="header-right">
+      <a class="active" href="">Home</a>
+      <a href="">About</a>
     </div>
+  </div>
 
+  <div id="VidDisplay" class="VidDisplay">
+    <div class="div1"><lord-icon src="https://cdn.lordicon.com/hmkhncjw.json" colors="primary:#fff"
+        style="width:50px;height:50px; margin-top: 4px;">
+      </lord-icon>
+      <H3>50 Milyon Dolar</H3>
+    </div>
+    <div class="div2">
+      <button class="PlayButton" value="Show/Hide" onClick="showHideDiv('VideoShow'); showHideStyle('VidDisplay')">
+        <div class="buttonTeks">
+          <lord-icon class="icon" src="https://cdn.lordicon.com/dpohzien.json" trigger="click" colors="primary:#ffffff">
+          </lord-icon>
+          <h3 id="PlayTekst">Play</h3>
+        </div>
+      </button>
+    </div>
+  </div>
+  <div id="VideoShow" class="VideoShow">
     <div class="vidgrid">
       <div class="Milyon">
-        <h2>50 Milyon Dolar</h2>
         <video controls poster="images/haydoTumbnail.jpg">
           <source src="videos/Haydo 1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
+    </div>
+  </div>
 
+  <br>
+
+  <div id="VidDisplay1" class="VidDisplay">
+    <div class="div1"><lord-icon src="https://cdn.lordicon.com/hmkhncjw.json" colors="primary:#fff"
+        style="width:50px;height:50px; margin-top: 4px;">
+      </lord-icon>
+      <H3>Muhtarlik Secimleri</H3>
+    </div>
+    <div class="div2">
+      <button class="PlayButton" value="Show/Hide" onClick="showHideDiv('VideoShow1'); showHideStyle('VidDisplay1')">
+        <div class="buttonTeks">
+          <lord-icon class="icon" src="https://cdn.lordicon.com/dpohzien.json" trigger="click" colors="primary:#ffffff">
+          </lord-icon>
+          <h3 id="PlayTekst">Play</h3>
+        </div>
+      </button>
+    </div>
+  </div>
+  <div id="VideoShow1" class="VideoShow">
+    <div class="vidgrid">
       <div class="Muhtar">
-        <h2>Muhtarlik Secimleri</h2>
         <video controls poster="images/haydoTumbnail.jpg">
           <source src="videos/Haydo 2.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
+    </div>
+  </div>
 
+  <br>
+
+  <div id="VidDisplay2" class="VidDisplay">
+    <div class="div1"><lord-icon src="https://cdn.lordicon.com/hmkhncjw.json" colors="primary:#fff"
+        style="width:50px;height:50px; margin-top: 4px;">
+      </lord-icon>
+      <H3>Miras Davasi</H3>
+    </div>
+    <div class="div2">
+      <button class="PlayButton" value="Show/Hide" onClick="showHideDiv('VideoShow2'); showHideStyle('VidDisplay2')">
+        <div class="buttonTeks">
+          <lord-icon class="icon" src="https://cdn.lordicon.com/dpohzien.json" trigger="click" colors="primary:#ffffff">
+          </lord-icon>
+          <h3 id="PlayTekst">Play</h3>
+        </div>
+      </button>
+    </div>
+  </div>
+  <div id="VideoShow2" class="VideoShow">
+    <div class="vidgrid">
       <div class="Miras">
-        <h2>Miras Davasi</h2>
         <video controls poster="images/haydoTumbnail.jpg">
           <source src="videos/Haydo 3.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
+    </div>
+  </div>
 
+  <br>
+
+  <div id="VidDisplay3" class="VidDisplay">
+    <div class="div1"><lord-icon src="https://cdn.lordicon.com/hmkhncjw.json" colors="primary:#fff"
+        style="width:50px;height:50px; margin-top: 4px;">
+      </lord-icon>
+      <H3>Texas</H3>
+    </div>
+    <div class="div2">
+      <button class="PlayButton" value="Show/Hide" onClick="showHideDiv('VideoShow3'); showHideStyle('VidDisplay3')">
+        <div class="buttonTeks">
+          <lord-icon class="icon" src="https://cdn.lordicon.com/dpohzien.json" trigger="click" colors="primary:#ffffff">
+          </lord-icon>
+          <h3 id="PlayTekst">Play</h3>
+        </div>
+      </button>
+    </div>
+  </div>
+  <div id="VideoShow3" class="VideoShow">
+    <div class="vidgrid">
       <div class="Texas">
-        <h2>Texas</h2>
         <video controls poster="images/haydoTumbnail.jpg">
           <source src="videos/Haydo 4.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
+    </div>
+  </div>
 
+  <br>
+
+  <div id="VidDisplay4" class="VidDisplay">
+    <div class="div1"><lord-icon src="https://cdn.lordicon.com/hmkhncjw.json" colors="primary:#fff"
+        style="width:50px;height:50px; margin-top: 4px;">
+      </lord-icon>
+      <H3>Padisahin Ascisis</H3>
+    </div>
+    <div class="div2">
+      <button class="PlayButton" value="Show/Hide" onClick="showHideDiv('VideoShow4'); showHideStyle('VidDisplay4')">
+        <div class="buttonTeks">
+          <lord-icon class="icon" src="https://cdn.lordicon.com/dpohzien.json" trigger="click" colors="primary:#ffffff">
+          </lord-icon>
+          <h3 id="PlayTekst">Play</h3>
+        </div>
+      </button>
+    </div>
+  </div>
+  <div id="VideoShow4" class="VideoShow">
+    <div class="vidgrid">
       <div class="Padisahin">
-        <h2>Padisahin Ascisis</h2>
         <video controls poster="images/haydoTumbnail.jpg">
           <source src="videos/Haydo 5.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
+    </div>
+  </div>
 
+  <br>
+
+  <div id="VidDisplay5" class="VidDisplay">
+    <div class="div1"><lord-icon src="https://cdn.lordicon.com/hmkhncjw.json" colors="primary:#fff"
+        style="width:50px;height:50px; margin-top: 4px;">
+      </lord-icon>
+      <H3>Karakol Baskini</H3>
+    </div>
+    <div class="div2">
+      <button class="PlayButton" value="Show/Hide" onClick="showHideDiv('VideoShow5'); showHideStyle('VidDisplay5')">
+        <div class="buttonTeks">
+          <lord-icon class="icon" src="https://cdn.lordicon.com/dpohzien.json" trigger="click" colors="primary:#ffffff">
+          </lord-icon>
+          <h3 id="PlayTekst">Play</h3>
+        </div>
+      </button>
+    </div>
+  </div>
+  <div id="VideoShow5" class="VideoShow">
+    <div class="vidgrid">
       <div class="Karakol">
-        <h2>Karakol Baskini</h2>
         <video controls poster="images/haydoTumbnail.jpg">
           <source src="videos/Haydo 6.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
+    </div>
+  </div>
 
+  <br>
+
+  <div id="VidDisplay6" class="VidDisplay">
+    <div class="div1"><lord-icon src="https://cdn.lordicon.com/hmkhncjw.json" colors="primary:#fff"
+        style="width:50px;height:50px; margin-top: 4px;">
+      </lord-icon>
+      <H3>Solo Haydo</H3>
+    </div>
+    <div class="div2">
+      <button class="PlayButton" value="Show/Hide" onClick="showHideDiv('VideoShow6'); showHideStyle('VidDisplay6')">
+        <div class="buttonTeks">
+          <lord-icon class="icon" src="https://cdn.lordicon.com/dpohzien.json" trigger="click" colors="primary:#ffffff">
+          </lord-icon>
+          <h3 id="PlayTekst">Play</h3>
+        </div>
+      </button>
+    </div>
+  </div>
+  <div id="VideoShow6" class="VideoShow">
+    <div class="vidgrid">
       <div class="Solo">
-        <h2>Solo Haydo</h2>
         <video controls poster="images/haydoTumbnail.jpg">
           <source src="videos/Haydo 7.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
     </div>
-  </body>
+  </div>
+
+  <div class="footer">&copy;<span>2023 Made By Furkan Ozturk, All rights reserved.</span></div>
+
+  <script type="text/javascript">
+    function showHideDiv(ele) {
+      var srcElement = document.getElementById(ele);
+      if (srcElement != "none") {
+        if (srcElement.style.display == "flex") {
+          srcElement.style.display = 'none';
+        }
+        else {
+          srcElement.style.display = 'flex';
+        }
+        return false;
+      }
+    }
+
+    function showHideStyle(ele) {
+      var srcElementStyle = document.getElementById(ele);
+      if (srcElementStyle != "none") {
+        if (srcElementStyle.style.borderBottomStyle === "none") {
+          srcElementStyle.style.borderBottomStyle = 'solid';
+        }
+        else {
+          srcElementStyle.style.borderBottomStyle = 'none';
+        }
+        return false;
+      }
+    }
+  </script>
+  <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+</body>
+
 </html>
 <!-- 
 <div class="">
