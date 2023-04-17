@@ -4,6 +4,7 @@
     background-color: #111111;
     overflow-x: hidden;
     color: white;
+    width: 100vw;
   }
 
   .dark-mode {
