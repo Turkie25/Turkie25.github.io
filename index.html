@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./StyleMobile.css">
     <link rel="icon" type="image/x-icon" href="./img/Profile-512.webp">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +20,7 @@
         <div class="darkmodeswitch">
             <div class="toggle-switch">
                 <label class="switch-label">
-                    <input title="." onclick="myFunction()" type="checkbox" class="checkbox">
+                    <input title="." onclick="myFunction(); changeBackground();" type="checkbox" class="checkbox">
                     <span class="slider"></span>
                 </label>
             </div>
@@ -49,7 +50,8 @@
 
         <h1 class="dark">Furkan Öztürk</h1>
         <h3>Software Developer</h3>
-        <p class="homeP">Hi, my name is Furkan Öztürk. <br> I'm a Software Development student studying at Gilde ICT college in
+        <p class="homeP">Hi, my name is Furkan Öztürk. <br> I'm a Software Development student studying at Gilde ICT
+            college in
             Roermond.
             At my school, we don't learn the normal way. We learn by mimicking the way you would normally work with a
             client. This way, we are better prepared to enter the workforce than regular students.
@@ -58,13 +60,14 @@
         <div class="darkmodeswitchMobile">
             <div class="toggle-switch">
                 <label class="switch-label">
-                    <input title="." onclick="myFunction()" type="checkbox" class="checkbox">
+                    <input title="." id="Modeswitch" onclick="myFunction(); changeBackground();" type="checkbox"
+                        class="checkbox">
                     <span class="slider"></span>
                 </label>
             </div>
         </div>
         <div class="bntClass">
-            <button onclick="scrollToSection()"> See more about me </button>
+            <button class="ScrollButton" id="ButtonHidden1" onclick="scrollToSection()"> See more about me </button>
         </div>
     </section>
     <section id="Section2">
@@ -95,7 +98,8 @@
         </div>
         <br><br><br><br><br><br><br><br><br>
         <div class="bntClass">
-            <button onclick="scrollToSection3()"> Press me! There is more </button>
+            <button class="ScrollButton" id="ButtonHidden2" onclick="scrollToSection3()"> Press me! There is more
+            </button>
         </div>
     </section>
     <section id="Section3">
@@ -104,6 +108,66 @@
             <div class="loader triangle">
                 <svg viewBox="0 0 86 80">
                     <polygon points="43 8 79 72 7 72"></polygon>
+                </svg>
+            </div>
+        </div>
+        <h1 class="projects">My Projects</h1>
+        <div class="cardBackground">
+            <div id="card" class="card">
+                <div class="card-content">
+                    <h2>Hall of Haydo</h2>
+                    <p>This is a site I made for myself, my brother, cousin, and anyone else who is interested in
+                        watching
+                        Kufurbaz Haydo
+                        quickly and easily. We experienced difficulty in finding high-quality videos of the series, so I
+                        thought, why not make
+                        it a lot easier for us?</p>
+                    <ul id="List1">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>JQuery</li>
+                    </ul>
+                    <div class="buttonSpacing">
+                        <a href="./haydo/index.html">
+                            <button id="buttonCard" class="button">
+                                View Project
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="card1" class="card">
+                <div class="card-content">
+                    <h2>EzyPos</h2>
+                    <p>This is a website i made for a client that displays information about their product and provides
+                        a way to contact them online.</p>
+                    <ul id="List2">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <div class="buttonSpacing">
+                        <a href="./ezypos/index.html">
+                            <button id="buttonCard1" class="button">
+                                View Project
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bntClass">
+            <button class="ScrollButton" id="ButtonHidden3" onclick="scrollToSection4()"> A bit more </button>
+        </div>
+
+    </section>
+    <section id="Section4">
+        <div class="Head">
+            <br><br><br><br><br>
+            <div class="loader">
+                <svg viewBox="0 0 80 80">
+                    <rect x="8" y="8" width="64" height="64"></rect>
                 </svg>
             </div>
         </div>
@@ -167,18 +231,10 @@
         </div>
         <br><br><br>
         <div class="bntClass">
-            <button onclick="scrollToSection4()"> Last time I promise </button>
+            <button class="ScrollButton" id="ButtonHidden4" onclick="scrollToSection5()"> Last time I promise </button>
         </div>
     </section>
-    <section id="Section4">
-        <div class="Head">
-            <br><br><br><br><br>
-            <div class="loader">
-                <svg viewBox="0 0 80 80">
-                    <rect x="8" y="8" width="64" height="64"></rect>
-                </svg>
-            </div>
-        </div>
+    <section id="Section5">
         <h1 class="contactme">Contact me</h1>
         <br><br><br><br><br><br><br>
         <div class="contact">
