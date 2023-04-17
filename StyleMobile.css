@@ -47,21 +47,33 @@
     margin-top: 15%;
   }
 
+  #Section1 {
+    /* margin-top: -100%; */
+    height: 80vh;
+  }
+
   #Section2 {
-    margin-top: -20%;
+    margin-top: -40%;
+    height: 80vh;
   }
 
   #Section3 {
-    margin-top: -100%;
+    /* margin-top: -100%; */
+    margin-top: -60%;
+
+    height: 100vh;
   }
 
   #Section4 {
-    margin-top: 80%;
+    margin-top: 50%;
+        /* height: 100vh; */
+
+    height: 100%;
   }
 
   #Section5 {
     margin-top: -5%;
-    height: 60vh;
+    height: 50vh;
   }
 
   p {
@@ -259,7 +271,7 @@
   }
 
   .projects {
-    /* margin-bottom: 20%; */
+    margin-bottom: 20%;
   }
 }
 
