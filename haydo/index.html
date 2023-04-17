@@ -25,7 +25,8 @@
       <h4>50 Milyon Dolar</h4>
     </div>
     <div class="div2">
-      <button class="PlayButton" value="Show/Hide" onClick="showHideDiv('VideoShow'); showHideStyle('VidDisplay')">
+      <button id="btn1" class="PlayButton" value="Show/Hide"
+        onClick="showHideDiv('VideoShow'); showHideStyle('VidDisplay')">
         <div class="buttonTeks">
           <lord-icon class="icon" src="https://cdn.lordicon.com/dpohzien.json" trigger="click" colors="primary:#ffffff">
           </lord-icon>
@@ -219,7 +220,17 @@
     </div>
   </div>
 
-  <div class="footer">&copy;<span>2023 Made By Furkan Ozturk, All rights reserved, except the video's displayed.</span></div>
+  <div class="footer">&copy;<span>2023 Made By Furkan Ozturk, All rights reserved, except the video's displayed.</span>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $(this).html($(this).html() == '<div class="buttonTeks"><lord-icon class="icon" src="https://cdn.lordicon.com/gmotxzjh.json" trigger="click" colors="primary:#ffffff"></lord-icon><h4 id="PlayTekst">Close</h4></div>' ? '<div class="buttonTeks"><lord-icon class="icon" src="https://cdn.lordicon.com/dpohzien.json" trigger="click" colors="primary:#ffffff"></lord-icon><h4 id="PlayTekst">Play</h4></div>' : '<div class="buttonTeks"><lord-icon class="icon" src="https://cdn.lordicon.com/gmotxzjh.json" trigger="click" colors="primary:#ffffff"></lord-icon><h4 id="PlayTekst">Close</h4></div>');
+      });
+    });
+  </script>
 
   <script type="text/javascript">
     function showHideDiv(ele) {
@@ -250,7 +261,6 @@
   </script>
   <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
 </body>
-
 </html>
 <!-- 
 <div class="">

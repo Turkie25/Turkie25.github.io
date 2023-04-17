@@ -72,11 +72,12 @@
   .div2 {
     grid-area: 1 / 6 / 2 / 9;
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    margin-right: 5%;
   }
 
   .PlayButton {
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
     border-color: grey;
     background-color: transparent;
@@ -84,7 +85,7 @@
     justify-content: center;
     margin-top: 2%;
     height: 70%;
-    width: 75%;
+    width: 25%;
   }
 
   .buttonTeks {
@@ -117,7 +118,7 @@
 
   video {
     height: 20vh;
-    width: 90%;
+    width: 100%;
     border-radius: 5px;
     background-color: black;
   }
@@ -132,9 +133,9 @@
   }
 
   video {
-    height: 375px;
+    height: 410px;
     width: 100%;
-    border-radius: 25px;
+    border-radius: 15px;
     background-color: black;
   }
 
