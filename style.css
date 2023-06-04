@@ -338,4 +338,47 @@
   #ButtonHidden3{
     margin-top: 2%;
   }
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: #000;
+  animation: blink 1s infinite;
+}
+
+ @keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+#typing-text::after {
+  content: "|";
+  opacity: 1;
+  animation: blink 1s infinite;
+}
+
+.items div {
+  scroll-snap-align: center;
+}
+
+.items{
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
 }

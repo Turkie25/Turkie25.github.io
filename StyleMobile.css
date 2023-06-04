@@ -756,3 +756,15 @@ strong {
 .card4:hover .discord {
   fill: white;
 }
+
+ @keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+#typing-text::after {
+  content: "|";
+  opacity: 1;
+  animation: blink 1s infinite;
+}
