@@ -1,228 +1,734 @@
-.main-child {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--color-gray-100);
-  width: 420px;
-  height: 65px;
+@media screen and (max-width: 420px) {
+  .main-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-gray-100);
+    width: 420px;
+    height: 65px;
+  }
+  .golf-mk4-cabrio {
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    font-size: 24px;
+    display: inline-block;
+    width: 389px;
+    height: 35px;
+  }
+  .main-child1,
+  .main-inner,
+  .main-item,
+  .rectangle-div {
+    position: absolute;
+    transform: rotate(-161deg);
+    transform-origin: 0 0;
+  }
+  .main-item {
+    top: 512.2px;
+    left: 422.09px;
+    background-color: var(--color-black);
+    width: 525.32px;
+    height: 120.95px;
+  }
+  .main-child1,
+  .main-inner,
+  .rectangle-div {
+    background-color: var(--color-white);
+    width: 523.84px;
+    height: 5px;
+  }
+  .main-inner {
+    top: 412px;
+    left: 461px;
+  }
+  .main-child1,
+  .rectangle-div {
+    left: 459.3px;
+  }
+  .rectangle-div {
+    top: 464.27px;
+    border: 10px var(--color-black);
+    box-sizing: border-box;
+  }
+  .main-child1 {
+    top: 516.27px;
+  }
+  .main-child2,
+  .rectangle-a {
+    position: absolute;
+    top: 102px;
+    border-radius: var(--br-8xs);
+    box-sizing: border-box;
+    height: 67px;
+  }
+  .rectangle-a {
+    text-decoration: none;
+    left: 55px;
+    background-color: #f3bb04;
+    box-shadow: 5px 10px 4px 5px rgba(0, 0, 0, 0.25);
+    border: 2px solid var(--color-black);
+    width: 310px;
+    cursor: pointer;
+  }
+  .main-child2 {
+    left: 54px;
+    background-color: #2866a5;
+    border-top: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black);
+    border-left: 2px solid var(--color-black);
+    width: 37px;
+  }
+  .nl {
+    position: absolute;
+    top: 141px;
+    left: 57px;
+    font-size: 20px;
+    display: inline-block;
+    width: 33px;
+    height: 23px;
+  }
+  .eu-sterren-1,
+  .xk-072-j {
+    position: absolute;
+    top: 112px;
+  }
+  .xk-072-j {
+    left: 99px;
+    font-size: 40px;
+    color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 256px;
+    height: 48px;
+  }
+  .eu-sterren-1 {
+    left: 59px;
+    width: 27px;
+    height: 23px;
+    object-fit: cover;
+  }
+  .gmai-1-icon {
+    position: relative;
+    width: 88.98px;
+    height: 58.07px;
+    object-fit: cover;
+  }
+  .frame1 {
+    text-decoration: none;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-gray-100);
+    width: 120.47px;
+    height: 95.88px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 15.058258056640625px;
+    box-sizing: border-box;
+  }
+  .insta-1-icon {
+    position: relative;
+    width: 78.03px;
+    height: 76.97px;
+    object-fit: cover;
+    mix-blend-mode: normal;
+  }
+  .frame,
+  .frame2 {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .frame2 {
+    text-decoration: none;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-gray-100);
+    width: 120.47px;
+    height: 95.88px;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .frame {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .ck2-1-icon {
+    position: relative;
+    width: 57px;
+    height: 37px;
+    object-fit: cover;
+  }
+  .kenteken-check {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 206px;
+    height: 39px;
+    flex-shrink: 0;
+  }
+  .frame3 {
+    text-decoration: none;
+    align-self: stretch;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-gray-100);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: var(--padding-4xs) var(--padding-4xs) var(--padding-4xs) 10px;
+    color: inherit;
+  }
+  .frame-parent,
+  .ik-ben-te {
+    position: absolute;
+    display: flex;
+    align-items: center;
+  }
+  .frame-parent {
+    top: 680px;
+    left: 75px;
+    width: 282px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+  .ik-ben-te {
+    top: 550px;
+    left: 41px;
+    color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    width: 348px;
+    height: 88px;
+  }
+  .mk4-removebg-preview-1-icon {
+    position: absolute;
+    top: 97px;
+    left: 18px;
+    width: 389px;
+    height: 352px;
+    object-fit: cover;
+  }
+  .main {
+    position: relative;
+    background-color: #f8f8fa;
+    width: 100%;
+    min-height: 900px;
+    overflow: hidden;
+    text-align: center;
+    font-size: var(--font-size-6xl);
+    color: var(--color-white);
+    font-family: var(--font-inter);
+  }
+
+  .H1Tel{
+    display: none;
+  }
 }
-.golf-mk4-cabrio {
-  position: absolute;
-  top: 18px;
-  left: 14px;
-  font-size: 24px;
-  display: inline-block;
-  width: 389px;
-  height: 35px;
-}
-.main-child1,
-.main-inner,
-.main-item,
-.rectangle-div {
-  position: absolute;
-  transform: rotate(-161deg);
-  transform-origin: 0 0;
-}
-.main-item {
-  top: 512.2px;
-  left: 422.09px;
-  background-color: var(--color-black);
-  width: 525.32px;
-  height: 120.95px;
-}
-.main-child1,
-.main-inner,
-.rectangle-div {
-  background-color: var(--color-white);
-  width: 523.84px;
-  height: 5px;
-}
-.main-inner {
-  top: 412px;
-  left: 461px;
-}
-.main-child1,
-.rectangle-div {
-  left: 459.3px;
-}
-.rectangle-div {
-  top: 464.27px;
-  border: 10px  var(--color-black);
-  box-sizing: border-box;
-}
-.main-child1 {
-  top: 516.27px;
-}
-.main-child2,
-.rectangle-a {
-  position: absolute;
-  top: 102px;
-  border-radius: var(--br-8xs);
-  box-sizing: border-box;
-  height: 67px;
-}
-.rectangle-a {
-  text-decoration: none;
-  left: 55px;
-  background-color: #f3bb04;
-  box-shadow: 5px 10px 4px 5px rgba(0, 0, 0, 0.25);
-  border: 2px solid var(--color-black);
-  width: 310px;
-  cursor: pointer;
-}
-.main-child2 {
-  left: 54px;
-  background-color: #2866a5;
-  border-top: 2px solid var(--color-black);
-  border-bottom: 2px solid var(--color-black);
-  border-left: 2px solid var(--color-black);
-  width: 37px;
-}
-.nl {
-  position: absolute;
-  top: 141px;
-  left: 57px;
-  font-size: 20px;
-  display: inline-block;
-  width: 33px;
-  height: 23px;
-}
-.eu-sterren-1,
-.xk-072-j {
-  position: absolute;
-  top: 112px;
-}
-.xk-072-j {
-  left: 99px;
-  font-size: 40px;
-  color: var(--color-black);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 256px;
-  height: 48px;
-}
-.eu-sterren-1 {
-  left: 59px;
-  width: 27px;
-  height: 23px;
-  object-fit: cover;
-}
-.gmai-1-icon {
-  position: relative;
-  width: 88.98px;
-  height: 58.07px;
-  object-fit: cover;
-}
-.frame1 {
-  text-decoration: none;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-gray-100);
-  width: 120.47px;
-  height: 95.88px;
-  overflow: hidden;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0 15.058258056640625px;
-  box-sizing: border-box;
-}
-.insta-1-icon {
-  position: relative;
-  width: 78.03px;
-  height: 76.97px;
-  object-fit: cover;
-  mix-blend-mode: normal;
-}
-.frame,
-.frame2 {
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-}
-.frame2 {
-  text-decoration: none;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-gray-100);
-  width: 120.47px;
-  height: 95.88px;
-  flex-shrink: 0;
-  flex-direction: column;
-  justify-content: center;
-}
-.frame {
-  align-self: stretch;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.ck2-1-icon {
-  position: relative;
-  width: 57px;
-  height: 37px;
-  object-fit: cover;
-}
-.kenteken-check {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 206px;
-  height: 39px;
-  flex-shrink: 0;
-}
-.frame3 {
-  text-decoration: none;
-  align-self: stretch;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-gray-100);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: var(--padding-4xs) var(--padding-4xs) var(--padding-4xs) 10px;
-  color: inherit;
-}
-.frame-parent,
-.ik-ben-te {
-  position: absolute;
-  display: flex;
-  align-items: center;
-}
-.frame-parent {
-  top: 680px;
-  left: 75px;
-  width: 282px;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 12px;
-}
-.ik-ben-te {
-  top: 550px;
-  left: 41px;
-  color: rgba(0, 0, 0, 0.9);
-  justify-content: center;
-  width: 348px;
-  height: 88px;
-}
-.mk4-removebg-preview-1-icon {
-  position: absolute;
-  top: 97px;
-  left: 18px;
-  width: 389px;
-  height: 352px;
-  object-fit: cover;
-}
-.main {
-  position: relative;
-  background-color: #f8f8fa;
-  width: 100%;
-  min-height: 900px;
-  overflow: hidden;
-  text-align: center;
-  font-size: var(--font-size-6xl);
-  color: var(--color-white);
-  font-family: var(--font-inter);
+
+/* Add this CSS to your global.css or index.css file */
+@media screen and (min-width: 421px) {
+  .H1Tel {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    margin-top: 20%;
+    font-size: 24px; /* Optional: Adjust the font size as needed */
+  }
+  /* Select the elements you want to hide */
+  .main-child,
+  .golf-mk4-cabrio,
+  .main-item,
+  .main-inner,
+  .rectangle-div,
+  .main-child1,
+  .rectangle-a,
+  .main-child2,
+  .nl,
+  .xk-072-j,
+  .eu-sterren-1,
+  .frame-parent,
+  .ik-ben-te,
+  .mk4-removebg-preview-1-icon {
+    display: none;
+  }
+
+  .hourglassBackground {
+    position: relative;
+    background-color: rgb(71, 60, 60);
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin: 30px auto;
+  }
+
+  .hourglassContainer {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 50px;
+    height: 70px;
+    -webkit-animation: hourglassRotate 2s ease-in 0s infinite;
+    animation: hourglassRotate 2s ease-in 0s infinite;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+
+  .hourglassContainer div,
+  .hourglassContainer div:before,
+  .hourglassContainer div:after {
+    transform-style: preserve-3d;
+  }
+
+  @-webkit-keyframes hourglassRotate {
+    0% {
+      transform: rotateX(0deg);
+    }
+
+    50% {
+      transform: rotateX(180deg);
+    }
+
+    100% {
+      transform: rotateX(180deg);
+    }
+  }
+
+  @keyframes hourglassRotate {
+    0% {
+      transform: rotateX(0deg);
+    }
+
+    50% {
+      transform: rotateX(180deg);
+    }
+
+    100% {
+      transform: rotateX(180deg);
+    }
+  }
+
+  .hourglassCapTop {
+    top: 0;
+  }
+
+  .hourglassCapTop:before {
+    top: -25px;
+  }
+
+  .hourglassCapTop:after {
+    top: -20px;
+  }
+
+  .hourglassCapBottom {
+    bottom: 0;
+  }
+
+  .hourglassCapBottom:before {
+    bottom: -25px;
+  }
+
+  .hourglassCapBottom:after {
+    bottom: -20px;
+  }
+
+  .hourglassGlassTop {
+    transform: rotateX(90deg);
+    position: absolute;
+    top: -16px;
+    left: 3px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: #999999;
+  }
+
+  .hourglassGlass {
+    perspective: 100px;
+    position: absolute;
+    top: 32px;
+    left: 20px;
+    width: 10px;
+    height: 6px;
+    background-color: #999999;
+    opacity: 0.5;
+  }
+
+  .hourglassGlass:before,
+  .hourglassGlass:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #999999;
+    left: -17px;
+    width: 44px;
+    height: 28px;
+  }
+
+  .hourglassGlass:before {
+    top: -27px;
+    border-radius: 0 0 25px 25px;
+  }
+
+  .hourglassGlass:after {
+    bottom: -27px;
+    border-radius: 25px 25px 0 0;
+  }
+
+  .hourglassCurves:before,
+  .hourglassCurves:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 32px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #333;
+    animation: hideCurves 2s ease-in 0s infinite;
+  }
+
+  .hourglassCurves:before {
+    left: 15px;
+  }
+
+  .hourglassCurves:after {
+    left: 29px;
+  }
+
+  @-webkit-keyframes hideCurves {
+    0% {
+      opacity: 1;
+    }
+
+    25% {
+      opacity: 0;
+    }
+
+    30% {
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes hideCurves {
+    0% {
+      opacity: 1;
+    }
+
+    25% {
+      opacity: 0;
+    }
+
+    30% {
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .hourglassSandStream:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 24px;
+    width: 3px;
+    background-color: white;
+    -webkit-animation: sandStream1 2s ease-in 0s infinite;
+    animation: sandStream1 2s ease-in 0s infinite;
+  }
+
+  .hourglassSandStream:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 36px;
+    left: 19px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #fff;
+    animation: sandStream2 2s ease-in 0s infinite;
+  }
+
+  @-webkit-keyframes sandStream1 {
+    0% {
+      height: 0;
+      top: 35px;
+    }
+
+    50% {
+      height: 0;
+      top: 45px;
+    }
+
+    60% {
+      height: 35px;
+      top: 8px;
+    }
+
+    85% {
+      height: 35px;
+      top: 8px;
+    }
+
+    100% {
+      height: 0;
+      top: 8px;
+    }
+  }
+
+  @keyframes sandStream1 {
+    0% {
+      height: 0;
+      top: 35px;
+    }
+
+    50% {
+      height: 0;
+      top: 45px;
+    }
+
+    60% {
+      height: 35px;
+      top: 8px;
+    }
+
+    85% {
+      height: 35px;
+      top: 8px;
+    }
+
+    100% {
+      height: 0;
+      top: 8px;
+    }
+  }
+
+  @-webkit-keyframes sandStream2 {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    51% {
+      opacity: 1;
+    }
+
+    90% {
+      opacity: 1;
+    }
+
+    91% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes sandStream2 {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    51% {
+      opacity: 1;
+    }
+
+    90% {
+      opacity: 1;
+    }
+
+    91% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .hourglassSand:before,
+  .hourglassSand:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 6px;
+    background-color: white;
+    perspective: 500px;
+  }
+
+  .hourglassSand:before {
+    top: 8px;
+    width: 39px;
+    border-radius: 3px 3px 30px 30px;
+    animation: sandFillup 2s ease-in 0s infinite;
+  }
+
+  .hourglassSand:after {
+    border-radius: 30px 30px 3px 3px;
+    animation: sandDeplete 2s ease-in 0s infinite;
+  }
+
+  @-webkit-keyframes sandFillup {
+    0% {
+      opacity: 0;
+      height: 0;
+    }
+
+    60% {
+      opacity: 1;
+      height: 0;
+    }
+
+    100% {
+      opacity: 1;
+      height: 17px;
+    }
+  }
+
+  @keyframes sandFillup {
+    0% {
+      opacity: 0;
+      height: 0;
+    }
+
+    60% {
+      opacity: 1;
+      height: 0;
+    }
+
+    100% {
+      opacity: 1;
+      height: 17px;
+    }
+  }
+
+  @-webkit-keyframes sandDeplete {
+    0% {
+      opacity: 0;
+      top: 45px;
+      height: 17px;
+      width: 38px;
+      left: 6px;
+    }
+
+    1% {
+      opacity: 1;
+      top: 45px;
+      height: 17px;
+      width: 38px;
+      left: 6px;
+    }
+
+    24% {
+      opacity: 1;
+      top: 45px;
+      height: 17px;
+      width: 38px;
+      left: 6px;
+    }
+
+    25% {
+      opacity: 1;
+      top: 41px;
+      height: 17px;
+      width: 38px;
+      left: 6px;
+    }
+
+    50% {
+      opacity: 1;
+      top: 41px;
+      height: 17px;
+      width: 38px;
+      left: 6px;
+    }
+
+    90% {
+      opacity: 1;
+      top: 41px;
+      height: 0;
+      width: 10px;
+      left: 20px;
+    }
+  }
+
+  @keyframes sandDeplete {
+    0% {
+      opacity: 0;
+      top: 45px;
+      height: 17px;
+      width: 38px;
+      left: 6px;
+    }
+
+    1% {
+      opacity: 1;
+      top: 45px;
+      height: 17px;
+      width: 38px;
+      left: 6px;
+    }
+
+    24% {
+      opacity: 1;
+      top: 45px;
+      height: 17px;
+      width: 38px;
+      left: 6px;
+    }
+
+    25% {
+      opacity: 1;
+      top: 41px;
+      height: 17px;
+      width: 38px;
+      left: 6px;
+    }
+
+    50% {
+      opacity: 1;
+      top: 41px;
+      height: 17px;
+      width: 38px;
+      left: 6px;
+    }
+
+    90% {
+      opacity: 1;
+      top: 41px;
+      height: 0;
+      width: 10px;
+      left: 20px;
+    }
+  }
 }
