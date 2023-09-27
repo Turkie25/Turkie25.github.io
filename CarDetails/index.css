@@ -1,0 +1,228 @@
+.main-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gray-100);
+  width: 420px;
+  height: 65px;
+}
+.golf-mk4-cabrio {
+  position: absolute;
+  top: 18px;
+  left: 14px;
+  font-size: 24px;
+  display: inline-block;
+  width: 389px;
+  height: 35px;
+}
+.main-child1,
+.main-inner,
+.main-item,
+.rectangle-div {
+  position: absolute;
+  transform: rotate(-161deg);
+  transform-origin: 0 0;
+}
+.main-item {
+  top: 512.2px;
+  left: 422.09px;
+  background-color: var(--color-black);
+  width: 525.32px;
+  height: 120.95px;
+}
+.main-child1,
+.main-inner,
+.rectangle-div {
+  background-color: var(--color-white);
+  width: 523.84px;
+  height: 5px;
+}
+.main-inner {
+  top: 412px;
+  left: 461px;
+}
+.main-child1,
+.rectangle-div {
+  left: 459.3px;
+}
+.rectangle-div {
+  top: 464.27px;
+  border: 10px  var(--color-black);
+  box-sizing: border-box;
+}
+.main-child1 {
+  top: 516.27px;
+}
+.main-child2,
+.rectangle-a {
+  position: absolute;
+  top: 102px;
+  border-radius: var(--br-8xs);
+  box-sizing: border-box;
+  height: 67px;
+}
+.rectangle-a {
+  text-decoration: none;
+  left: 55px;
+  background-color: #f3bb04;
+  box-shadow: 5px 10px 4px 5px rgba(0, 0, 0, 0.25);
+  border: 2px solid var(--color-black);
+  width: 310px;
+  cursor: pointer;
+}
+.main-child2 {
+  left: 54px;
+  background-color: #2866a5;
+  border-top: 2px solid var(--color-black);
+  border-bottom: 2px solid var(--color-black);
+  border-left: 2px solid var(--color-black);
+  width: 37px;
+}
+.nl {
+  position: absolute;
+  top: 141px;
+  left: 57px;
+  font-size: 20px;
+  display: inline-block;
+  width: 33px;
+  height: 23px;
+}
+.eu-sterren-1,
+.xk-072-j {
+  position: absolute;
+  top: 112px;
+}
+.xk-072-j {
+  left: 99px;
+  font-size: 40px;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 256px;
+  height: 48px;
+}
+.eu-sterren-1 {
+  left: 59px;
+  width: 27px;
+  height: 23px;
+  object-fit: cover;
+}
+.gmai-1-icon {
+  position: relative;
+  width: 88.98px;
+  height: 58.07px;
+  object-fit: cover;
+}
+.frame1 {
+  text-decoration: none;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-100);
+  width: 120.47px;
+  height: 95.88px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 15.058258056640625px;
+  box-sizing: border-box;
+}
+.insta-1-icon {
+  position: relative;
+  width: 78.03px;
+  height: 76.97px;
+  object-fit: cover;
+  mix-blend-mode: normal;
+}
+.frame,
+.frame2 {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.frame2 {
+  text-decoration: none;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-100);
+  width: 120.47px;
+  height: 95.88px;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.frame {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ck2-1-icon {
+  position: relative;
+  width: 57px;
+  height: 37px;
+  object-fit: cover;
+}
+.kenteken-check {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 206px;
+  height: 39px;
+  flex-shrink: 0;
+}
+.frame3 {
+  text-decoration: none;
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-100);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-4xs) var(--padding-4xs) var(--padding-4xs) 10px;
+  color: inherit;
+}
+.frame-parent,
+.ik-ben-te {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.frame-parent {
+  top: 680px;
+  left: 75px;
+  width: 282px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.ik-ben-te {
+  top: 550px;
+  left: 41px;
+  color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  width: 348px;
+  height: 88px;
+}
+.mk4-removebg-preview-1-icon {
+  position: absolute;
+  top: 97px;
+  left: 18px;
+  width: 389px;
+  height: 352px;
+  object-fit: cover;
+}
+.main {
+  position: relative;
+  background-color: #f8f8fa;
+  width: 100%;
+  min-height: 900px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-6xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
