@@ -1,20 +1,29 @@
 @media screen and (max-width: 420px) {
+
+  .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
   .main-child {
     position: absolute;
     top: 0;
     left: 0;
     background-color: var(--color-gray-100);
-    width: 420px;
+    width: 100%;
     height: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .golf-mk4-cabrio {
-    position: absolute;
-    top: 18px;
-    left: 14px;
     font-size: 24px;
-    display: inline-block;
-    width: 389px;
+    width: 100%; /* Make the element full width within the container */
+    max-width: 389px; /* Set a max-width if needed */
     height: 35px;
+    text-align: center; /* Center text horizontally within the element */
   }
   .main-child1,
   .main-inner,
@@ -57,22 +66,23 @@
   .main-child2,
   .rectangle-a {
     position: absolute;
-    top: 102px;
     border-radius: var(--br-8xs);
     box-sizing: border-box;
     height: 67px;
   }
+
   .rectangle-a {
+    top: 102px;
     text-decoration: none;
-    left: 55px;
     background-color: #f3bb04;
     box-shadow: 5px 10px 4px 5px rgba(0, 0, 0, 0.25);
     border: 2px solid var(--color-black);
     width: 310px;
-    cursor: pointer;
   }
+
   .main-child2 {
-    left: 54px;
+    top: -2px;
+    left: -2px;
     background-color: #2866a5;
     border-top: 2px solid var(--color-black);
     border-bottom: 2px solid var(--color-black);
@@ -81,20 +91,21 @@
   }
   .nl {
     position: absolute;
-    top: 141px;
-    left: 57px;
+    top: 35px;
+    left: 1px;
     font-size: 20px;
     display: inline-block;
     width: 33px;
     height: 23px;
+    color: white;
   }
   .eu-sterren-1,
   .xk-072-j {
     position: absolute;
-    top: 112px;
+    top: 10px;
   }
   .xk-072-j {
-    left: 99px;
+    left: 40px;
     font-size: 40px;
     color: var(--color-black);
     display: flex;
@@ -104,7 +115,7 @@
     height: 48px;
   }
   .eu-sterren-1 {
-    left: 59px;
+    left: 3px;
     width: 27px;
     height: 23px;
     object-fit: cover;
@@ -194,7 +205,6 @@
   }
   .frame-parent {
     top: 680px;
-    left: 75px;
     width: 282px;
     flex-direction: column;
     justify-content: flex-start;
@@ -202,7 +212,6 @@
   }
   .ik-ben-te {
     top: 550px;
-    left: 41px;
     color: rgba(0, 0, 0, 0.9);
     justify-content: center;
     width: 348px;
@@ -211,7 +220,6 @@
   .mk4-removebg-preview-1-icon {
     position: absolute;
     top: 97px;
-    left: 18px;
     width: 389px;
     height: 352px;
     object-fit: cover;
@@ -228,7 +236,7 @@
     font-family: var(--font-inter);
   }
 
-  .H1Tel{
+  .H1Tel {
     display: none;
   }
 }
