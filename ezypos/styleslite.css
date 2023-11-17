@@ -1,0 +1,629 @@
+@charset "utf-8";
+body {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: #5d5d5d;
+}
+
+.container {
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    width: 800px;
+    text-align: left;
+    background-color: #FFF;
+    background-image: url(images/containerbg.jpg);
+    background-repeat: repeat;
+}
+
+.content-container {
+    background-color: #FFF;
+    float: left;
+    width: 800px;
+}
+
+.lite-reports-gap {
+    float: left;
+    height: 38px;
+    width: 762px;
+}
+
+.logonright {
+    float: left;
+    width: 800px;
+    background-color: #FFF;
+}
+
+.header {
+    float: left;
+    width: 800px;
+    background-color: #FFF;
+}
+
+.homebelowhdr {
+    float: left;
+    width: 800px;
+    background-color: #FFF;
+}
+
+.homebelowhdrup {
+    float: left;
+    width: 800px;
+    height: 23px;
+    background-color: #FFF;
+}
+
+.homebelowhdrdown {
+    float: left;
+    width: 800px;
+    height: 28px;
+    background-color: #FFF;
+}
+
+.homesftwrlogos {
+    float: left;
+    width: 800px;
+    background-color: #FFF;
+}
+
+.homeaboveftr {
+    float: left;
+    width: 800px;
+    background-color: #FFF;
+}
+
+.homeaboveftrdown {
+    float: left;
+    width: 800px;
+    height: 31px;
+    background-color: #FFF;
+}
+
+.homeaboveftrup {
+    float: left;
+    width: 800px;
+    height: 27px;
+    background-color: #FFF;
+}
+
+.footer {
+    text-align: center;
+    float: left;
+    width: 800px;
+    background-color: #5D5D5D;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 11px;
+}
+
+.logo {
+    float: left;
+    width: 204px;
+}
+
+.right {
+    float: left;
+    height: 72px;
+    width: 594px;
+}
+
+.righttop {
+    text-align: right;
+    width: 581px;
+    padding-right: 15px;
+    padding-top: 20px;
+}
+
+.rightbtm {
+    text-align: right;
+    float: left;
+    width: 596px;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+.toplinkarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    padding-right: 12px;
+    padding-left: 12px;
+    float: right;
+    font-weight: bold;
+}
+
+.righttoptxtarea {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 11px;
+    color: #666;
+    float: right;
+    text-align: right;
+}
+
+.homebelowhdrlft {
+    float: left;
+    height: 284px;
+    width: 246px;
+}
+
+.homebelowhdrcntr {
+    float: left;
+    width: 491px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #FFF;
+}
+
+.homebelowhdrcntrup {
+    background-image: url(images/ezyPOS-design4-2_15.jpg);
+    background-repeat: repeat-x;
+    height: 35px;
+    width: 491px;
+}
+
+.homebelowhdrcntrdown {
+    background-image: url(images/ezyPOS-design4-2_19.jpg);
+    background-repeat: repeat-x;
+    float: left;
+    height: 17px;
+    width: 491px;
+}
+
+.homebelowhdrcntrcntr {
+    float: left;
+    height: 232px;
+    width: 491px;
+    background-color: #F2A219;
+    vertical-align: top;
+    text-align: left;
+}
+
+.homebelowhdrright {
+    float: left;
+    height: 284px;
+    width: 63px;
+}
+
+.homesftwrlogoslitelft {
+    float: left;
+    width: 18px;
+    height: 100px;
+}
+
+.homesftwrlogoslite {
+    float: left;
+    width: 161px;
+}
+
+.homesftwrlogoslitetxtlft {
+    background-image: url(images/ezyPOS-design4-sftwrelogos_37.jpg);
+    background-repeat: repeat-y;
+}
+
+.homesftwrlogoslitertxtrght {
+    background-image: url(images/ezyPOS-design4-sftwrelogos_39.jpg);
+    background-repeat: repeat-y;
+    width: 6px;
+}
+
+.homesftwrlogoslitetxt {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    height: 85px;
+}
+
+a.pinklinks:link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    color: #ff5f00;
+    text-decoration: none;
+}
+
+a.pinklinks:visited {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    color: #ff5f00;
+    text-decoration: none;
+}
+
+.homelitetxtheading {
+    font-family: "Arial black", Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.homelitetxt {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.homesftwrentrprselft {
+    float: left;
+    width: 39px;
+    height: 100px;
+}
+
+.homeabveftr1 {
+    float: left;
+    width: 18px;
+    height: 66px;
+}
+
+.homeabveftr2 {
+    float: left;
+    width: 370px;
+}
+
+.homeabveftr3 {
+    float: left;
+    width: 19px;
+    height: 66px;
+}
+
+.homeabveftr4 {
+    float: left;
+    width: 371px;
+}
+
+a.ftrlink:link {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 11px;
+    color: #ff5f00;
+    text-decoration: none;
+}
+
+a.topnavlinks:link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    float: right;
+    font-weight: bold;
+    color: #ff5f00;
+    text-decoration: none;
+}
+
+a.topnavlinks:visited {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    float: right;
+    font-weight: bold;
+    color: #ff5f00;
+    text-decoration: none;
+}
+
+.lite-left {
+    float: left;
+    width: 18px;
+    background-color: #FFF;
+    height: 100px;
+}
+
+.lite-right {
+    float: left;
+    width: 20px;
+    background-color: #FFF;
+    height: 100px;
+}
+
+.lite-admin {
+    float: left;
+    width: 762px;
+}
+
+.lite-reports-head {
+    float: left;
+    height: 29px;
+    width: 762px;
+}
+
+.lite-reports {
+    float: left;
+    width: 762px;
+}
+
+.lite-center {
+    float: left;
+    width: 762px;
+    background-color: #FFF;
+}
+
+.lite-top {
+    float: left;
+    height: 55px;
+    width: 762px;
+}
+
+.lite-header {
+    float: left;
+    width: 762px;
+}
+
+.lite-userinterface-head {
+    float: left;
+    width: 762px;
+}
+
+.lite-userinterface-gap {
+    float: left;
+    height: 18px;
+    width: 762px;
+}
+
+.lite-userinterface {
+    float: left;
+    width: 762px;
+}
+
+.lite-userinterface-gap2 {
+    float: left;
+    height: 21px;
+    width: 762px;
+}
+
+.lite-admin-head {
+    float: left;
+    height: 32px;
+    width: 762px;
+}
+
+.lite-wholesale-head {
+    float: left;
+    width: 762px;
+}
+
+.lite-header-left {
+    float: left;
+    width: 380px;
+}
+
+.lite-header-right {
+    float: left;
+    width: 382px;
+}
+
+.lite-header-head {
+    float: left;
+    height: 43px;
+    width: 380px;
+}
+
+.lite-header-text {
+    float: left;
+    width: 380px;
+}
+
+.lite-header-bottom {
+    float: left;
+    height: 43px;
+    width: 380px;
+}
+
+.lite-header-text-head {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    float: left;
+    width: 350px;
+    height: 44px;
+    padding-right: 10px;
+}
+
+.lite-header-text-body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12.5px;
+    float: left;
+    width: 350px;
+    height: 110px;
+    padding-right: 10px;
+}
+
+.lite-header-text-body-centralize {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+    float: left;
+    width: 350px;
+    height: 110px;
+    padding-right: 10px;
+}
+
+.lite-header-text-body-kitchen {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    float: left;
+    width: 350px;
+    height: 110px;
+    padding-right: 10px;
+}
+
+.lite-header-text-left {
+    background-image: url(images/ezyPOS-lite1_09.jpg);
+    background-repeat: repeat-y;
+    float: left;
+    height: 154px;
+    width: 20px;
+}
+
+.lite-header-text-area {
+    float: left;
+    width: 360px;
+}
+
+.feature-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666;
+}
+
+a:link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+}
+
+a:visited {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+}
+
+#lightbox {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    line-height: 0;
+}
+
+#lightbox img {
+    width: auto;
+    height: auto;
+}
+
+#lightbox a img {
+    border: none;
+}
+
+#outerImageContainer {
+    position: relative;
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+#imageContainer {
+    padding: 10px;
+}
+
+#loading {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+}
+
+#hoverNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+#imageContainer>#hoverNav {
+    left: 0;
+}
+
+#hoverNav a {
+    outline: none;
+}
+
+#prevLink,
+#nextLink {
+    width: 49%;
+    height: 100%;
+    background-image: url(data:image/gif;base64,AAAA);
+    /* Trick IE into showing hover */
+    display: block;
+}
+
+#prevLink {
+    left: 0;
+    float: left;
+}
+
+#nextLink {
+    right: 0;
+    float: right;
+}
+
+#prevLink:hover,
+#prevLink:visited:hover {
+    background: url(images/prevlabel.gif) left 15% no-repeat;
+}
+
+#nextLink:hover,
+#nextLink:visited:hover {
+    background: url(images/nextlabel.gif) right 15% no-repeat;
+}
+
+#imageDataContainer {
+    font: 10px Verdana, Helvetica, sans-serif;
+    background-color: #fff;
+    margin: 0 auto;
+    line-height: 1.4em;
+    overflow: auto;
+    width: 100%;
+}
+
+#imageData {
+    padding: 0 10px;
+    color: #666;
+}
+
+#imageData #imageDetails {
+    width: 70%;
+    float: left;
+    text-align: left;
+}
+
+#imageData #caption {
+    font-weight: bold;
+}
+
+#imageData #numberDisplay {
+    display: block;
+    clear: left;
+    padding-bottom: 1.0em;
+}
+
+#imageData #bottomNavClose {
+    width: 66px;
+    float: right;
+    padding-bottom: 0.7em;
+    outline: none;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+}
+
+.contactus-container {
+    float: left;
+    width: 800px;
+    background-color: #FFF;
+}
+
+.contactus-containertable {
+    margin-left: 25px;
+}
+
+.contactusformarea {
+    float: left;
+}
+
+.contactusimagearea {
+    float: left;
+    width: 200px;
+}
+
+.food-cycle-area {
+    float: left;
+    width: 762px;
+    text-align: center;
+}
