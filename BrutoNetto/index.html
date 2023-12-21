@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Bruto naar Netto</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Style.css">
+    <style>
+        #resultaat {
+            display: none;
+            /* Hide the result container by default */
+        }
+
+        #resultaat.show {
+            display: block;
+            /* Show the result container when the 'show' class is applied */
+        }
+    </style>
+</head>
+
+<body style="padding-bottom: 0px;background: #343541;">
+    <div class="container py-4 py-xl-5" style="margin-bottom: 10px;margin-top: 0px;">
+        <div class="row gy-4 gy-md-0">
+            <div class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center"
+                style="padding-top: 0px;">
+                <div>
+                    <div class="notification">
+                        <div class="notiglow"></div>
+                        <div class="notiborderglow"></div>
+                        <div class="notititle">Bruto naar Netto</div>
+                        <div class="notibody">De Netto Uurloon Calculator is ontworpen om jou te helpen bij het snel en
+                            efficiënt berekenen van je netto uurloon. Of
+                            je nu een freelancer bent, een werknemer met variabele uren of gewoon nieuwsgierig bent naar
+                            hoeveel je netto per uur
+                            verdient, deze tool maakt het proces moeiteloos.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-xl-5 m-xl-5">
+                    <section class="position-relative py-4 py-xl-5">
+                        <div class="container">
+                            <div class="form-containerN" id="resultaat">
+                                <!-- Resultaatweergave -->
+                                <!-- The result will be displayed here -->
+                            </div>
+
+                            <div class="row d-flex justify-content-center">
+                                <div class="form-container">
+                                    <form class="form" onsubmit="calculateNetto(event)">
+                                        <div class="form-group">
+                                            <label for="uurloon">Uurloon (bruto):</label>
+                                            <input required="" id="uurloon" name="uurloon" type="decimal"
+                                                placeholder="Voer bruto uurloon in">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="uren">Gewerkte uren:</label>
+                                            <input required="" id="uren" name="uren" type="decimal"
+                                                placeholder="Voer aantal gewerkte uren in">
+
+                                        </div>
+
+                                        <button type="submit" class="form-submit-btn">Bereken</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bold-and-dark.js"></script>
+    <script>
+        function calculateNetto(event) {
+            event.preventDefault(); // Prevent the form from submitting traditionally
+
+            // Get input values
+            var brutoUurloon = parseFloat(document.getElementById('uurloon').value);
+            var aantalUren = parseFloat(document.getElementById('uren').value);
+
+            // Perform calculation (You can customize this based on your actual calculation logic)
+            var nettoUurloon = (brutoUurloon * 0.79) * aantalUren; // Example calculation, adjust as needed
+
+            // Display the result
+            var resultaatElement = document.getElementById('resultaat');
+            resultaatElement.innerHTML = '<h1>Netto Uurloon: €' + nettoUurloon.toFixed(2) + '</h1>';
+
+            // Show the result container
+            resultaatElement.classList.add('show');
+        }
+    </script>
+</body>
+
+</html>
