@@ -3,33 +3,27 @@ function myFunction() {
   element.classList.toggle("dark-mode");
 }
 
-function scrollToSection() {
-  let section = document.getElementById("Section2");
+function scrollToSection(sectionId) {
+  let section = document.getElementById(sectionId);
   section.scrollIntoView({ behavior: "smooth" });
 }
 
-function scrollToSection3() {
-  let section = document.getElementById("Section3");
-  section.scrollIntoView({ behavior: "smooth" });
-}
-function scrollToSection4() {
-  let section = document.getElementById("Section4");
-  section.scrollIntoView({ behavior: "smooth" });
-}
-
-function scrollToSection5() {
-  let section = document.getElementById("Section5");
-  section.scrollIntoView({ behavior: "smooth" });
+function changeBackgroundColor(elementClass) {
+  var elements = document.getElementsByClassName(elementClass);
+  for (let i = 0; i < elements.length; i++) {
+    if (isCSSColor) {
+      elements[i].style.backgroundColor = "rgb(173, 216, 230)";
+    } else {
+      elements[i].style.backgroundColor = "";
+    }
+  }
 }
 
 var isCSSColor = true;
 
 function changeBackground() {
-  var card = document.getElementById("card");
-  var card1 = document.getElementById("card1");
-
-  var buttonCard = document.getElementById("buttonCard");
-  var buttonCard1 = document.getElementById("buttonCard1");
+  var cardElements = document.getElementsByClassName("card");
+  var buttonCardElements = document.getElementsByClassName("button");
 
   var buttonScroll = document.getElementById("ButtonHidden1");
   var buttonScroll2 = document.getElementById("ButtonHidden2");
@@ -43,45 +37,28 @@ function changeBackground() {
     .getElementById("List2")
     .getElementsByTagName("li");
 
-  if (isCSSColor) {
-    card.style.backgroundColor = "rgb(115, 203, 233)";
-    card1.style.backgroundColor = "rgb(115, 203, 233)";
-    buttonCard.style.backgroundColor = "rgb(173, 216, 230)";
-    buttonCard1.style.backgroundColor = "rgb(173, 216, 230)";
+  changeBackgroundColor("buttonCard");
 
-    buttonScroll.style.backgroundColor = "rgb(115, 203, 233)";
-    buttonScroll2.style.backgroundColor = "rgb(115, 203, 233)";
-    buttonScroll3.style.backgroundColor = "rgb(115, 203, 233)";
-    buttonScroll4.style.backgroundColor = "rgb(115, 203, 233)";
-
-    for (let i = 0; i < listItems1.length; i++) {
-      listItems1[i].style.color = "lightblue";
-    }
-
-    for (let i = 0; i < listItems2.length; i++) {
-      listItems2[i].style.color = "lightblue";
-    }
-
-    isCSSColor = false;
-  } else {
-    card.style.backgroundColor = "";
-    card1.style.backgroundColor = "";
-    buttonCard.style.backgroundColor = "";
-    buttonCard1.style.backgroundColor = "";
-
-    buttonScroll.style.backgroundColor = "";
-    buttonScroll2.style.backgroundColor = "";
-    buttonScroll3.style.backgroundColor = "";
-    buttonScroll4.style.backgroundColor = "";
-
-    for (let i = 0; i < listItems1.length; i++) {
-      listItems1[i].style.color = "";
-    }
-
-    for (let i = 0; i < listItems2.length; i++) {
-      listItems2[i].style.color = "";
-    }
-
-    isCSSColor = true;
+  for (let i = 0; i < cardElements.length; i++) {
+    cardElements[i].style.backgroundColor = isCSSColor ? "rgb(115, 203, 233)" : "";
   }
+
+  for (let i = 0; i < buttonCardElements.length; i++) {
+    buttonCardElements[i].style.backgroundColor = isCSSColor ? "rgb(173, 216, 230)" : "";
+  }
+
+  buttonScroll.style.backgroundColor = isCSSColor ? "rgb(115, 203, 233)" : "";
+  buttonScroll2.style.backgroundColor = isCSSColor ? "rgb(115, 203, 233)" : "";
+  buttonScroll3.style.backgroundColor = isCSSColor ? "rgb(115, 203, 233)" : "";
+  buttonScroll4.style.backgroundColor = isCSSColor ? "rgb(115, 203, 233)" : "";
+
+  for (let i = 0; i < listItems1.length; i++) {
+    listItems1[i].style.color = isCSSColor ? "lightblue" : "";
+  }
+
+  for (let i = 0; i < listItems2.length; i++) {
+    listItems2[i].style.color = isCSSColor ? "lightblue" : "";
+  }
+
+  isCSSColor = !isCSSColor;
 }
