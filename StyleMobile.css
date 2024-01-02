@@ -24,6 +24,37 @@
     width: 100vw;
   }
 
+
+    .AvatarImg {
+    height: 45%;
+    margin-top: 5%;
+  }
+
+  .homeP {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+    padding: 15px;
+    background-color: #222;
+    border-radius: 25px;
+    width: 80%;
+    display: flex;
+    align-items: bottom;
+    justify-content: center;
+  }
+
+  #typing-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15%;
+    font-size: 150%;
+    font-family: "Press Start 2P", cursive;
+  }
+
+
+
   h1 {
     display: flex;
     align-items: center;
@@ -54,7 +85,7 @@
   }
 
   #Section2 {
-    margin-top: -20%;
+    /* margin-top: -10%; */
         height: 100%;
 
   }

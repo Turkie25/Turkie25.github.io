@@ -24,6 +24,7 @@ var isCSSColor = true;
 function changeBackground() {
   var cardElements = document.getElementsByClassName("card");
   var buttonCardElements = document.getElementsByClassName("button");
+  var pElements = document.getElementsByClassName("homeP");
 
   var buttonScroll = document.getElementById("ButtonHidden1");
   var buttonScroll2 = document.getElementById("ButtonHidden2");
@@ -45,6 +46,10 @@ function changeBackground() {
 
   for (let i = 0; i < buttonCardElements.length; i++) {
     buttonCardElements[i].style.backgroundColor = isCSSColor ? "rgb(173, 216, 230)" : "";
+  }
+
+  for (let i = 0; i < pElements.length; i++) {
+    pElements[i].style.backgroundColor = isCSSColor ? "rgb(115, 216, 230)" : "";
   }
 
   buttonScroll.style.backgroundColor = isCSSColor ? "rgb(115, 203, 233)" : "";
