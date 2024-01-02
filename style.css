@@ -21,7 +21,26 @@
     justify-content: center;
   }
 
+    .Head2 {
+    margin-top: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .AvatarImg {
+    height: 95%;
+    border-radius: 40%;
+    /* margin-top: 5%; */
+  }
+
   .section1 {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .section2 {
+    margin-top: 30%;
     height: 100vh;
     width: 100vw;
   }
@@ -46,6 +65,16 @@
     height: 80vh;
   }
 
+  #typing-text {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: -40%;
+    font-size: 230%;
+    padding-right: 12%;
+    font-family: "Press Start 2P", cursive;
+  }
+
   h1 {
     display: flex;
     align-items: center;
@@ -61,6 +90,23 @@
     justify-content: center;
     font-size: 100%;
     font-family: "Press Start 2P", cursive;
+  }
+
+  .homeP {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    /* margin-left: auto; */
+    margin-right: 3%;
+    font-family: "Press Start 2P", cursive;
+    width: 44%;
+    font-size: 90%;
+    line-height: 2;
+    padding-right: 5%;
+    text-align: center;
+    padding: 15px;
+    /* background-color: #222; */
+    border-radius: 25px;   
   }
 
   p {
@@ -80,6 +126,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .ScrollButtonHome {
+    position: relative;
+    /* margin: 0; */
+    padding: 0.8em 1em;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    margin-right: -43%;
+    font-family: "Press Start 2P", cursive;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
   }
 
   .ScrollButton {
@@ -105,7 +175,8 @@
     transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
   }
 
-  .ScrollButton:hover {
+  .ScrollButton:hover,
+  .ScrollButtonHome:hover {
     animation: sh0 0.5s ease-in-out both;
   }
 
@@ -131,13 +202,16 @@
     }
   }
 
-  .ScrollButton:hover span {
+  .ScrollButton:hover span,
+  .ScrollButtonHome:hover span {
     animation: storm 0.7s ease-in-out both;
     animation-delay: 0.06s;
   }
 
   .ScrollButton::before,
-  .ScrollButton::after {
+  .ScrollButton::after,
+  .ScrollButtonHome::before,
+  .ScrollButtonHome::after {
     content: "";
     position: absolute;
     right: 0;
@@ -154,17 +228,21 @@
   }
 
   .ScrollButton:hover::before,
-  .ScrollButton:hover::after {
+  .ScrollButton:hover::after,
+  .ScrollButtonHome:hover::before,
+  .ScrollButtonHome:hover::after {
     opacity: 0.15;
     transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1),
       opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
   }
 
-  .ScrollButton:hover::before {
+  .ScrollButton:hover::before,
+  .ScrollButtonHome:hover::before {
     transform: translate3d(50%, 0, 0) scale(0.9);
   }
 
-  .ScrollButton:hover::after {
+  .ScrollButton:hover::after,
+  .ScrollButtonHome:hover::after {
     transform: translate(50%, 0) scale(1.1);
   }
 
