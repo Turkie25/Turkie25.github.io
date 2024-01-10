@@ -157,9 +157,19 @@ main {
   margin-bottom: 5%;
 }
 
+
+.ServiceListTitel {
+  word-wrap: break-word;
+}
+
+/* Clear float for subsequent elements */
+.clearFloat {
+    clear: both;
+}
+
 #services img {
   flex-basis: 45%; /* Adjust the width of the image */
-  width: 50%;
+  width: 48%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
