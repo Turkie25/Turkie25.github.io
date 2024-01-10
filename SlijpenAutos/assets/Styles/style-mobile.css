@@ -1,0 +1,68 @@
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+
+  .h1Home {
+    font-size: 30px;
+  }
+
+  #Home {
+    height: 400px; /* Set the desired height here */
+  }
+
+  .pHome {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .contactButton {
+    margin-top: 45%; /* You can adjust the margin-top as needed */
+  }
+
+  .openingTimesCard,
+  .googleMap {
+    max-width: 100%;
+  }
+
+  .openingTimesCard {
+    grid-template-columns: 1fr;
+  }
+
+  #services img {
+    width: 100%;
+  }
+
+  .times {
+    margin-top: -18%;
+  }
+
+  #Openingstijden {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  #services h2 {
+    flex-basis: 100%;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .OtijdenH2 {
+    margin-bottom: 5%;
+  }
+
+  .banner {
+    margin-top: 5%;
+    width: 90%;
+  }
+
+  .BannerText h2 {
+  font-size: 18px;
+}
+}
