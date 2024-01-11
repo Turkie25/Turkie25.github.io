@@ -41,7 +41,7 @@ main {
 }
 
 #Home {
-  background-image: url("../images/slijpen1.jpg");
+  background-image: url("../images/slijpen3.jpeg");
   background-size: cover;
   background-position: center;
   height: 600px; /* Set the desired height here */
@@ -87,7 +87,7 @@ main {
 
 /* Card styling */
 .openingTimesCard {
-  max-width: 30%;
+  max-width: 40%;
   margin: 20px auto;
   padding: 20px;
   display: grid;
@@ -160,6 +160,10 @@ main {
 
 .ServiceListTitel {
   word-wrap: break-word;
+}
+
+.ServiceList {
+  max-width: 50%;
 }
 
 /* Clear float for subsequent elements */
@@ -242,4 +246,25 @@ address {
 
 .BannerText {
   text-align: center;
+}
+
+
+
+
+/* 
+ 
+*/
+
+#Voorraad h2 {
+  flex-basis: 100%;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.AutoSelectie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
