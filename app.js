@@ -31,12 +31,14 @@ function changeBackground() {
   var buttonScroll3 = document.getElementById("ButtonHidden3");
   var buttonScroll4 = document.getElementById("ButtonHidden4");
 
-  const listItems1 = document
-    .getElementById("List1")
-    .getElementsByTagName("li");
-  const listItems2 = document
-    .getElementById("List2")
-    .getElementsByTagName("li");
+  const listItems = document.getElementsByClassName("List");
+
+  for (let i = 0; i < listItems.length; i++) {
+    const liElements = listItems[i].getElementsByTagName("li");
+    for (let j = 0; j < liElements.length; j++) {
+      liElements[j].style.color = isCSSColor ? "lightblue" : "";
+    }
+  }
 
   changeBackgroundColor("buttonCard");
 
@@ -56,14 +58,6 @@ function changeBackground() {
   buttonScroll2.style.backgroundColor = isCSSColor ? "rgb(115, 203, 233)" : "";
   buttonScroll3.style.backgroundColor = isCSSColor ? "rgb(115, 203, 233)" : "";
   buttonScroll4.style.backgroundColor = isCSSColor ? "rgb(115, 203, 233)" : "";
-
-  for (let i = 0; i < listItems1.length; i++) {
-    listItems1[i].style.color = isCSSColor ? "lightblue" : "";
-  }
-
-  for (let i = 0; i < listItems2.length; i++) {
-    listItems2[i].style.color = isCSSColor ? "lightblue" : "";
-  }
 
   isCSSColor = !isCSSColor;
 }
