@@ -7,7 +7,6 @@
     /* width: 100%; */
     /* max-width: 100%;
     overflow-x: hidden; */
-
   }
 
   .dark-mode {
@@ -28,15 +27,13 @@
     align-items: center;
     justify-content: center;
   }
-  
 
   section {
     height: 100vh;
     /* width: 100vw; */
   }
 
-
-    .AvatarImg {
+  .AvatarImg {
     width: 100%; /* Make the image responsive */
     height: auto;
     margin-top: 5%;
@@ -65,8 +62,6 @@
     font-family: "Press Start 2P", cursive;
   }
 
-
-
   h1 {
     display: flex;
     align-items: center;
@@ -91,15 +86,14 @@
     margin-top: 15%;
   }
 
-    #Section1 {
+  #Section1 {
     /* margin-top: 20%; */
     height: 100%;
   }
 
   #Section2 {
     /* margin-top: -10%; */
-        height: 100%;
-
+    height: 100%;
   }
 
   #Section3 {
@@ -118,9 +112,9 @@
   }
 
   p {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     margin-left: auto;
     margin-right: auto;
     font-family: "Press Start 2P", cursive;
@@ -314,7 +308,7 @@
   .projects {
     margin-bottom: 20%;
   }
-}
+
 
 .loader {
   --path: grey;
@@ -800,7 +794,7 @@ strong {
   fill: white;
 }
 
- @keyframes blink {
+@keyframes blink {
   50% {
     opacity: 0;
   }
@@ -810,4 +804,63 @@ strong {
   content: "|";
   opacity: 1;
   animation: blink 1s infinite;
+}
+
+.HomeRBmain {
+  border: darkgoldenrod 2px solid;
+  border-radius: 15px;
+  padding: 25px;
+  height: 4vh;
+}
+
+.ImageProject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Red {
+  color: red;
+}
+
+.Blue {
+  color: blue;
+}
+
+.Cyan {
+  color: cyan;
+}
+
+.RedAndBlueHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+
+.RedAndBlueHeader img {
+  height: 6.5vh;
+}
+
+.RB_Image {
+  display: column;
+  width: 100%;
+  gap: 5%;
+}
+
+.RB_Image img {
+  /* height: 24vh; */
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.RB_video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.RB_video video {
+  width: 100%;
+}
 }

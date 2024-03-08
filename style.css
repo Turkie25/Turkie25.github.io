@@ -110,9 +110,9 @@
   }
 
   p {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     margin-left: auto;
     margin-right: auto;
     font-family: "Press Start 2P", cursive;
@@ -458,5 +458,62 @@
   gap: 20px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+}
+
+.HomeRBmain {
+  border: darkgoldenrod 2px solid;
+  border-radius: 15px;
+  padding: 25px;
+  /* height: 50vh; */
+}
+
+.ImageProject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* RB */
+.RedAndBlueHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+
+.RB_Image {
+display: flex;
+align-items: center;
+justify-content: center;
+/* border-radius: 5px; */
+width: 100%;
+gap: 5%;
+}
+
+.RedAndBlueHeader img {
+  height: 15vh;
+}
+
+.RB_Image img {
+  height: 40vh;
+}
+
+
+.RB_video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Red {
+  color: red;
+}
+
+.Blue {
+  color: blue;
+}
+
+.Cyan {
+  color: cyan;
 }
 }
