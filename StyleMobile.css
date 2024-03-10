@@ -868,4 +868,9 @@
     border: solid 1.5px white;
     border-radius: 5px;
   }
+
+  .HomeSPmain {
+    width: 85%;
+    border-radius: 15px;
+  }
 }
