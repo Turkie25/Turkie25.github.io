@@ -806,10 +806,10 @@
   }
 
   .HomeRBmain {
-    border: darkgoldenrod 2px solid;
+    /* border: darkgoldenrod 2px solid; */
     border-radius: 15px;
-    padding: 25px;
-    height: 4vh;
+    padding: 15px;
+    width: 90%;
   }
 
   .ImageProject {
