@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/LimburgDonerLogo-removebg-preview.png">
+    <link rel="stylesheet" href="Style.css">
+    <title>LimburgDoner</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="https://kit.fontawesome.com/172475f835.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <img class="Logo" src="./img/LimburgDonerLogoSmall.jpeg" alt="Logo LimburgDoner">
+        </header>
+        <br>
+        <h1><i class="fa-solid fa-truck"></i> Uw locale Dönerzaak op wielen.</h1>
+        <br>
+        <section class="Truck-container">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img class="Truck" id="TruckIMG" src="./img/truck.jpg" alt="Doner truck">
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Truck" id="TruckIMG" src="./img/truck1.jpg" alt="Doner truck">
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Truck" id="TruckIMG" src="./img/truck2.jpg" alt="Doner truck">
+                </div>
+
+            </div>
+        </section>
+
+        <br>
+        <section class="dayLocation">
+            <h1><i class="fa-solid fa-location-arrow"></i> Onze locatie vandaag:</h1>
+            <img class="LocationImage" id="location-image" src="" alt="Location Image">
+            <iframe id="map-iframe" loading="lazy"></iframe>
+            <br>
+        </section>
+
+
+        <section class="Locations">
+            <div class="icon_align">
+                <i id="LocationClass" class="fa-solid fa-location-dot"></i>
+                <h2>Onze <span>Locaties</span>:</h2>
+            </div>
+            
+            <img class="LocationImage" id="location-image" src="./img/Maandag.jpg" alt="Location Image">
+            <img class="LocationImage" id="location-image" src="./img/Dinsdag.jpg" alt="Location Image">
+            <img class="LocationImage" id="location-image" src="./img/Woensdag.jpg" alt="Location Image">
+            <img class="LocationImage" id="location-image" src="./img/Donderdag.jpg" alt="Location Image">
+            <img class="LocationImage" id="location-image" src="./img/Vrijdag.jpg" alt="Location Image">
+        </section>
+
+        <section class="Menu">
+            <div class="icon_align">
+                <lord-icon class="Icon" colors="primary:#ef921d" src="https://cdn.lordicon.com/depeqmsz.json" trigger="loop">
+                </lord-icon><h2><Span> Ons</Span> Menu<span>:</span></h2>
+            </div>
+            <img class="MenuIMG" src="./img/menuSmall.jpeg" alt="Location Image">
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Limburg Doner. All rights reserved.</p>
+            <p>Made by <a href="https://furkanozturk.nl/">Furkan Öztürk</a></p>
+        </footer>
+</body>
+
+<script>
+    // Get the current day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+    var dayOfWeek = new Date().getDay();
+    // var dayOfWeek = 5;
+
+    // Array to store image paths and Google Maps iframe URLs for each day of the week
+    var locations = [
+        { image: "", map: "" },    // Sunday
+        { image: "./img/Maandag.jpg", map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.230978209847!2d6.062815361779384!3d51.38043277166698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c745e8aa5f1809%3A0x654fd76c4f932e4d!2sWork%20and%20Stay!5e0!3m2!1snl!2snl!4v1714263759111!5m2!1snl!2snl" },    // Monday
+        { image: "./img/Dinsdag.jpg", map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.501358247624!2d6.045837711777749!3d51.35707927166179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c74f55dc117a89%3A0x6bdd26dea17f47b!2sKennedyplein%2C%205993%20BW%20Maasbree!5e0!3m2!1snl!2snl!4v1714263862285!5m2!1snl!2snl" },   // Tuesday
+        { image: "./img/Woensdag.jpg", map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4984.722339032437!2d6.138706311776659!3d51.341268971658195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c74fe300585607%3A0x5d4a9b6f47ba924e!2sAlbert%20Heijn!5e0!3m2!1snl!2snl!4v1714263962989!5m2!1snl!2snl" }, // Wednesday
+        { image: "./img/Donderdag.jpg", map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2493.937538064254!2d6.111097811774707!3d51.31227347165189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c74e3517020d37%3A0x9cc29ad9568b7d44!2sJumbo!5e0!3m2!1snl!2snl!4v1714264044282!5m2!1snl!2snl" },  // Thursday
+        { image: "./img/Vrijdag.jpg", map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2492.8070298009875!2d6.1525244117761275!3d51.3330690716565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7501803a46a4d%3A0xc872b21c4aa38218!2sPLUS%20Verbeeten-Tegelen!5e0!3m2!1snl!2snl!4v1714264102845!5m2!1snl!2snl" },   // Friday
+        { image: "", map: "" }   // Saturday
+    ];
+
+    // Get the image element
+    var imageElement = document.getElementById("location-image");
+
+    // Get the Google Maps iframe element
+    var mapElement = document.getElementById("map-iframe");
+
+    // Update the image element and Google Maps iframe with the appropriate content based on the day of the week
+    if (locations[dayOfWeek].image) {
+        imageElement.src = locations[dayOfWeek].image;
+        mapElement.src = locations[dayOfWeek].map;
+    } else {
+        // Hide the section if there is no image for the current day
+        var section = document.querySelector(".dayLocation");
+        section.style.display = "none";
+    }
+
+
+</script>
+
+
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+</script>
+
+</html>
