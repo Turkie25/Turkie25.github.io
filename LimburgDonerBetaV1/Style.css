@@ -24,8 +24,14 @@ h2 {
     text-align: center;
 }
 
+.TitleSpan {
+  color: white;
+}
+
 #LocationClass {
-    width: 5%;
+  color: var(--orange);
+    width: 26px;
+    font-size: 26px;
 }
 
 /* .Icon {
