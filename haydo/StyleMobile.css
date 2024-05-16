@@ -124,6 +124,13 @@
     background-color: black;
   }
 
+      iframe {
+    height: auto;
+    width: 90vw;
+    border-radius: 5px;
+    background-color: black;
+  }
+
   h4 {
     color: #e7af1e;
     
