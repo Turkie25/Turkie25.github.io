@@ -704,6 +704,11 @@
     border-radius: 15px;
   }
 
+  .HomeAMmain {
+    width: 95%;
+    border-radius: 15px;
+  }
+
 .contact {
     display: flex;
     justify-content: center;
