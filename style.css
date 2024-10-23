@@ -3,858 +3,114 @@
     background-color: #111111;
     overflow-x: hidden;
     color: white;
+    font-family: "Press Start 2P", cursive;
+    line-height: 1.5;
   }
 
-  .dark-mode {
-    background-color: lightblue;
+  header {
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    padding: 1.5rem 3%;
+    background-color: #111111;
+    border-bottom: grey 1px solid;
+    color: white;
+    position: fixed;
+    top: 0;
+    margin-top: -0.5%;
+    width: 100%;
+  }
+
+  .getInTouch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: grey 1px solid;
+    padding: 1rem;
+    background-color: transparent;
     color: white;
   }
 
-  .darkmodeswitchMobile {
-    display: none;
-  }
-
-  .Head {
-    margin-top: 5%;
-    display: flex;
+  .containerMain {
+    display: grid;
     align-items: center;
-    justify-content: center;
-  }
-
-  .Head2 {
-    margin-top: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .AvatarImg {
-    height: 95%;
-    border-radius: 40%;
-    /* margin-top: 5%; */
-  }
-
-  .section1 {
-    height: 100vh;
-    width: 100vw;
-  }
-
-
-
-  #typing-text {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    margin-top: -40%;
-    font-size: 230%;
-    padding-right: 12%;
-    font-family: "Press Start 2P", cursive;
-  }
-
-  h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4%;
-    font-size: 250%;
-    font-family: "Press Start 2P", cursive;
-  }
-
-  h3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 100%;
-    font-family: "Press Start 2P", cursive;
-  }
-
-  .homeP {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    /* margin-left: auto; */
-    margin-right: 3%;
-    font-family: "Press Start 2P", cursive;
-    width: 44%;
-    font-size: 90%;
-    line-height: 2;
-    padding-right: 5%;
-    text-align: center;
-    padding: 15px;
-    /* background-color: #222; */
-    border-radius: 25px;
-  }
-
-  p {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Press Start 2P", cursive;
-    width: 65%;
-    font-size: 90%;
-    line-height: 2;
-    text-align: center;
-  }
-
-    .CVbtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    width: 13rem;
-    height: 3rem;
-    background-size: 300% 300%;
-    -webkit-backdrop-filter: blur(1rem);
-    backdrop-filter: blur(1rem);
-    border-radius: 5rem;
-    transition: 0.5s;
-    animation: gradient_301 5s ease infinite;
-    border: double 4px transparent;
-    background-image: linear-gradient(#212121, #212121),
-      linear-gradient(
-        137.48deg,
-        #ff3b3b 10%,
-        #ff0000 45%,
-        #9b0c0c 67%,
-        #ff0000 87%
-      );
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-  }
-
-  #container-stars {
-    position: fixed;
-    z-index: -1;
+    grid-template-columns: 1fr 1fr;
+    /* column-gap: 5px; */
+    margin-top: 15rem;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-    transition: 0.5s;
-    -webkit-backdrop-filter: blur(1rem);
-    backdrop-filter: blur(1rem);
-    border-radius: 5rem;
+    padding: 0 7%;
   }
 
-  strong {
-    z-index: 2;
-    font-family: "Press Start 2P", cursive;
-    font-size: 16px;
-    color: #ffffff;
-    text-shadow: 0 0 4px white;
-  }
-
-  #glow {
-    position: absolute;
+  .avatarIMGdiv {
     display: flex;
-    width: 12rem;
+    justify-content: left;
   }
 
-  .circle {
-    width: 100%;
-    height: 30px;
-    filter: blur(2rem);
-    animation: pulse_3011 4s infinite;
-    z-index: -1;
-  }
-
-  .circle:nth-of-type(1) {
-    background: rgba(254, 83, 186, 0.636);
-  }
-
-  .circle:nth-of-type(2) {
-    background: rgba(142, 81, 234, 0.704);
-  }
-
-  .btn:hover #container-stars {
-    z-index: 1;
-    background-color: #212121;
-  }
-
-  .btn:hover {
-    transform: scale(1.1);
-  }
-
-  .btn:active {
-    border: double 4px #fe53bb;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    animation: none;
-  }
-
-  .btn:active .circle {
-    background: #fe53bb;
-  }
-
-  #stars {
-    position: relative;
-    background: transparent;
-    width: 200rem;
-    height: 200rem;
-  }
-
-  #stars::after {
-    content: "";
-    position: absolute;
-    top: -10rem;
-    left: -100rem;
-    width: 100%;
-    height: 100%;
-    animation: animStarRotate 90s linear infinite;
-  }
-
-  #stars::after {
-    background-image: radial-gradient(#ffffff 1px, transparent 1%);
-    background-size: 50px 50px;
-  }
-
-  #stars::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 170%;
-    height: 500%;
-    animation: animStar 60s linear infinite;
-  }
-
-  #stars::before {
-    background-image: radial-gradient(#ffffff 1px, transparent 1%);
-    background-size: 50px 50px;
-    opacity: 0.5;
-  }
-
-  @keyframes animStar {
-    from {
-      transform: translateY(0);
-    }
-
-    to {
-      transform: translateY(-135rem);
-    }
-  }
-
-  @keyframes animStarRotate {
-    from {
-      transform: rotate(360deg);
-    }
-
-    to {
-      transform: rotate(0);
-    }
-  }
-
-  @keyframes gradient_301 {
-    0% {
-      background-position: 0% 50%;
-    }
-
-    50% {
-      background-position: 100% 50%;
-    }
-
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-  @keyframes pulse_3011 {
-    0% {
-      transform: scale(0.75);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-    }
-
-    70% {
-      transform: scale(1);
-      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-    }
-
-    100% {
-      transform: scale(0.75);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-  }
-
-  .bntClass {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .ScrollButtonHome {
-    position: relative;
-    /* margin: 0; */
-    padding: 0.8em 1em;
-    outline: none;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: right;
-    cursor: pointer;
-    border: none;
-    text-transform: uppercase;
-    background-color: #333;
-    border-radius: 10px;
-    color: #fff;
-    font-weight: 300;
-    font-size: 18px;
-    margin-right: -43%;
-    font-family: "Press Start 2P", cursive;
-    z-index: 0;
-    overflow: hidden;
-    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
-  }
-
-  .ScrollButton {
-    position: relative;
-    margin: 0;
-    padding: 0.8em 1em;
-    outline: none;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: none;
-    text-transform: uppercase;
-    background-color: #333;
-    border-radius: 10px;
-    color: #fff;
-    font-weight: 300;
-    font-size: 18px;
-    font-family: "Press Start 2P", cursive;
-    z-index: 0;
-    overflow: hidden;
-    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
-  }
-
-  .ScrollButton:hover,
-  .ScrollButtonHome:hover {
-    animation: sh0 0.5s ease-in-out both;
-  }
-
-  @keyframes sh0 {
-    0% {
-      transform: rotate(0deg) translate3d(0, 0, 0);
-    }
-
-    25% {
-      transform: rotate(7deg) translate3d(0, 0, 0);
-    }
-
-    50% {
-      transform: rotate(-7deg) translate3d(0, 0, 0);
-    }
-
-    75% {
-      transform: rotate(1deg) translate3d(0, 0, 0);
-    }
-
-    100% {
-      transform: rotate(0deg) translate3d(0, 0, 0);
-    }
-  }
-
-  .ScrollButton:hover span,
-  .ScrollButtonHome:hover span {
-    animation: storm 0.7s ease-in-out both;
-    animation-delay: 0.06s;
-  }
-
-  .ScrollButton::before,
-  .ScrollButton::after,
-  .ScrollButtonHome::before,
-  .ScrollButtonHome::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: #fff;
-    opacity: 0;
-    transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1),
-      opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
-    z-index: -1;
-    transform: translate(100%, -25%) translate3d(0, 0, 0);
-  }
-
-  .ScrollButton:hover::before,
-  .ScrollButton:hover::after,
-  .ScrollButtonHome:hover::before,
-  .ScrollButtonHome:hover::after {
-    opacity: 0.15;
-    transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1),
-      opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
-  }
-
-  .ScrollButton:hover::before,
-  .ScrollButtonHome:hover::before {
-    transform: translate3d(50%, 0, 0) scale(0.9);
-  }
-
-  .ScrollButton:hover::after,
-  .ScrollButtonHome:hover::after {
-    transform: translate(50%, 0) scale(1.1);
-  }
-
-  .Code {
-    display: flex;
-    justify-content: center;
-    gap: 10%;
-    flex-wrap: wrap;
-  }
-  .CodeSub {
-    height: auto;
-    width: calc(30% / 3 - 20px);
-    margin: 10px;
-  }
-
-  .darkmodeswitch {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    margin-top: 2%;
-    margin-right: 4%;
-  }
-
-  .toggle-switch {
-    position: relative;
-    width: 100px;
-    height: 50px;
-    --light: #d8dbe0;
-    --dark: #333;
-    --link: rgb(27, 129, 112);
-    --link-hover: rgb(24, 94, 82);
-  }
-
-  .switch-label {
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    background-color: #333;
-    border-radius: 25px;
-    cursor: pointer;
-    border: 3px solid var(--dark);
-  }
-
-  .checkbox {
-    position: absolute;
-    display: none;
-  }
-
-  .slider {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-
-  .checkbox:checked ~ .slider {
-    background-color: var(--light);
-    --light: #87ceeb;
-    --dark: yellow;
-    margin-top: -3%;
-    margin-left: -5%;
-    width: 111%;
-    height: 111%;
-  }
-
-  .slider::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
-    box-shadow: inset 12px -4px 0px 0px var(--light);
-    background-color: var(--dark);
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-
-  .checkbox:checked ~ .slider::before {
-    -webkit-transform: translateX(50px);
-    -ms-transform: translateX(50px);
-    transform: translateX(50px);
-    background-color: var(--dark);
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-
-  .card {
-    background-color: #222;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin-bottom: 20px;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .card-content {
-    padding: 10px;
-    color: #fff;
-  }
-
-  .card-content h2 {
-    margin-top: 1;
-    flex-wrap: wrap;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 95%;
-    font-family: "Press Start 2P", cursive;
-  }
-
-  .card-content ul {
-    margin: 10px 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    align-items: bottom;
-    justify-content: center;
-  }
-
-  .card-content ul li {
-    display: inline-block;
-    margin-right: 10px;
-    margin-top: 10px;
-    font-size: 10px;
-    color: #e7af1e;
-    font-family: "Press Start 2P", cursive;
-  }
-
-  .buttonSpacing {
-    display: flex;
-    align-items: bottom;
-    justify-content: center;
-    margin-bottom: -2%;
-  }
-
-  .button {
-    font-family: "Press Start 2P", cursive;
-    font-size: 1rem;
-    color: #fafafa;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid #fafafa;
-    background: #252525;
-    box-shadow: 3px 3px #fafafa;
-    cursor: pointer;
-    margin: 35px 0;
-  }
-
-  .button:active {
-    box-shadow: none;
-    transform: translate(3px, 3px);
-  }
-
-  .projects {
-    margin-bottom: 10%;
-  }
-
-  #ButtonHidden1,
-  #ButtonHidden2,
-  #ButtonHidden3,
-  #ButtonHidden4 {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  @keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .cursor {
-    display: inline-block;
-    width: 2px;
-    height: 1em;
-    background-color: #000;
-    animation: blink 1s infinite;
-  }
-
-  @keyframes blink {
-    50% {
-      opacity: 0;
-    }
-  }
-
-  #typing-text::after {
-    content: "|";
-    opacity: 1;
-    animation: blink 1s infinite;
-  }
-
-  .items div {
-    scroll-snap-align: center;
-  }
-
-  .items {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-  }
-
-  .HomeRBmain {
-    /* border: white 2px solid; */
-    border-radius: 15px;
-    padding: 25px;
-    /* height: 50vh; */
-    width: 85%;
-  }
-
-
-  .ImageProject {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* RB */
-  .RedAndBlueHeader {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2%;
-  }
-
-  .RB_Image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border-radius: 5px; */
-    width: 100%;
-    gap: 5%;
-  }
-
-  .RedAndBlueHeader img {
-    height: 15vh;
-  }
-
-  .RB_Image img {
-    height: 40vh;
-    border: solid 3px white;
-    border-radius: 15px;
-  }
-
-  .RB_video {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .RB_video video {
-    height: 100%;
-    border: solid 3px white;
-    border-radius: 15px;
-    width: 75%;
-  }
-
-  .Red {
-    color: red;
-  }
-
-  .Blue {
-    color: blue;
-  }
-
-  .Cyan {
-    color: cyan;
-  }
-
-  .Orange {
-    color: orange;
-  }
-
-    .HomeSPmain {
-    width: 85%;
-    border-radius: 15px;
-  }
-
-      .HomeLDmain {
-    width: 15%;
-    border-radius: 15px;
-  }
-
-.contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
-
-
-  .main {
+  .PortfolioInfo {
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
+    justify-content: right;
+    margin-top: -5%;
+    margin-left: -35%;
+    font-size: 180%;
   }
 
-  .up {
+  .avatarIMG {
+    /* height: 50%; */
+    width: 60%;
+    border-radius: 40%;
+  }
+
+  .RedgetIntouch {
+    border: none;
+    padding: 1rem 2rem;
+    background-color: darkred;
+    color: white;
+    /* font-size: large; */
+    font-family: "Press Start 2P", cursive;
+  }
+
+  .CVButton {
+    border: grey 1px solid;
+    padding: 1rem;
+    background-color: transparent;
+    color: white;
+    /* font-size: large; */
+    font-family: "Press Start 2P", cursive;
+  }
+
+  .container {
+    display: grid;
+    /* align-items: center; */
+    grid-template-columns: 1fr 1fr;
+    /* column-gap: 5px; */
+    margin-top: 10rem;
+    width: 100%;
+    padding: 0 7%;
+  }
+
+  .Info {
     display: flex;
-    flex-direction: row;
-    gap: 0.5em;
+    flex-direction: column;
+    margin-left: -20%;
   }
 
-  .down {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5em;
+  .Info h1 {
+    color: darkred;
   }
 
-  .card1 {
-    width: 90px;
-    height: 90px;
-    outline: none;
-    border: none;
-    background: white;
-    border-radius: 90px 5px 5px 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: 0.2s ease-in-out;
+  .Info p {
+    width: 70%;
+    
   }
 
-  .instagram {
-    height: auto;
-    width: 60%;
-    margin-top: 1.8em;
-    margin-left: 1.8em;
-    fill: #cc39a4;
+  .Button {
+    border: grey 1px solid;
+    padding: 1rem;
+    background-color: transparent;
+    color: white;
+    width: 30%;
+    font-family: "Press Start 2P", cursive;
   }
-
-  .card2 {
-    width: 90px;
-    height: 90px;
-    outline: none;
-    border: none;
-    background: white;
-    border-radius: 5px 90px 5px 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: 0.2s ease-in-out;
-  }
-
-  .twitter {
-    height: auto;
-    width: 45%;
-    margin-top: 2.3em;
-    margin-left: 0.7em;
-    fill: #0072b1;
-  }
-
-  .card3 {
-    width: 90px;
-    height: 90px;
-    outline: none;
-    border: none;
-    background: white;
-    border-radius: 5px 5px 5px 90px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: 0.2s ease-in-out;
-  }
-
-  .github {
-    height: auto;
-    width: 60%;
-    margin-top: 0.6em;
-    margin-left: 1.7em;
-  }
-
-  .card4 {
-    width: 90px;
-    height: 90px;
-    outline: none;
-    border: none;
-    background: white;
-    border-radius: 5px 5px 90px 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: 0.2s ease-in-out;
-  }
-
-  .discord {
-    height: auto;
-    width: 60%;
-    margin-top: 0.6em;
-    margin-left: 0.8em;
-    fill: white;
-  }
-
-  .card1:hover {
-    cursor: pointer;
-    scale: 1.1;
-    background-color: #cc39a4;
-  }
-
-  .card1:hover .instagram {
-    fill: white;
-  }
-
-  .card2:hover {
-    cursor: pointer;
-    scale: 1.1;
-    background-color: #0072b1;
-  }
-
-  .card2:hover .twitter {
-    fill: white;
-  }
-
-  .card3:hover {
-    cursor: pointer;
-    scale: 1.1;
-    background-color: black;
-  }
-
-  .card3:hover .github {
-    fill: white;
-  }
-
-  .card4:hover {
-    cursor: pointer;
-    scale: 1.1;
-    background-color: white;
-  }
-
-  .card4:hover .discord {
-    fill: white;
-  }
-
-  @keyframes blink {
-    50% {
-      opacity: 0;
-    }
-  }
-
 
 }
