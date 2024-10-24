@@ -123,26 +123,21 @@
                 <div class="card-content">
                     <h2>Audiometer</h2>
                     <div class="ImageProject">
-                        <img class="HomeAMmain" src="/img/Schermafbeelding 2024-10-23 171244.png" alt="">
+                        <img id="image1" class="HomeAMmain" src="/img/Schermafbeelding 2024-10-23 171244.png" alt="" onclick="toggleImage(this)">
+                        <img id="image2" class="HomeAMmain" src="/img/Schermafbeelding 2024-10-23 171115.png" alt="" onclick="toggleImage(this)" style="display: none;">
                     </div>
-                    <p> This project was developed for a client seeking a tool to assess individuals' hearing
-                        capabilities. The <span class="Blue">Audiometer</span> allows users to play beep sounds at
-                        various frequencies and volumes to evaluate hearing, primarily targeting children. The results
-                        are displayed in a comprehensive graph, enabling the client to create customized music that
-                        supports optimal auditory development for each individual. </p>
+                    <p>This project was developed for a client seeking a tool to assess individuals' hearing capabilities. The <span class="Blue">Audiometer</span> allows users to play beep sounds at various frequencies and volumes to evaluate hearing, primarily targeting children. The results are displayed in a comprehensive graph, enabling the client to create customized music that supports optimal auditory development for each individual.</p>
                     <ul class="List">
                         <li>Ionic</li>
                         <li>React</li>
                     </ul>
-                    <!-- <div class="buttonSpacing">
-                        <a href="#">
-                            <button id="buttonCard" class="button">
-                                View Project
-                            </button>
-                        </a>
-                    </div> -->
                 </div>
             </div>
+        </div>
+
+        <div id="overlay" class="overlay" onclick="closeImage()">
+            <span class="close" onclick="closeImage()">×</span>
+            <img id="fullscreenImg" class="fullscreen-img" src="" alt="">
         </div>
 
         <div class="cardBackground">
@@ -486,5 +481,4 @@
 </body>
 <script src="./typing.js"></script>
 <script src="./app.js"></script>
-
 </html>

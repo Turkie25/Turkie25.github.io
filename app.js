@@ -61,3 +61,46 @@ function changeBackground() {
 
   isCSSColor = !isCSSColor;
 }
+
+let currentImage = 1;
+
+function toggleImage(img) {
+    const overlay = document.getElementById('overlay');
+    const fullscreenImg = document.getElementById('fullscreenImg');
+    fullscreenImg.src = img.src; // Set the source of the fullscreen image
+    overlay.style.display = "flex"; // Show the overlay
+}
+
+function closeImage() {
+    const overlay = document.getElementById('overlay');
+    overlay.style.display = "none"; // Close the overlay
+}
+
+function switchImages() {
+    const img1 = document.getElementById('image1');
+    const img2 = document.getElementById('image2');
+
+    if (currentImage === 1) {
+        img1.style.opacity = "0"; // Fade out first image
+        setTimeout(() => {
+            img1.style.display = "none"; // Hide first image after fade out
+            img2.style.display = "block"; // Show second image
+            setTimeout(() => {
+                img2.style.opacity = "1"; // Fade in second image
+            }, 50); // Small timeout to ensure display change is processed
+        }, 500); // Match timeout with CSS transition duration
+        currentImage = 2;
+    } else {
+        img2.style.opacity = "0"; // Fade out second image
+        setTimeout(() => {
+            img2.style.display = "none"; // Hide second image after fade out
+            img1.style.display = "block"; // Show first image
+            setTimeout(() => {
+                img1.style.opacity = "1"; // Fade in first image
+            }, 50); // Small timeout to ensure display change is processed
+        }, 500); // Match timeout with CSS transition duration
+        currentImage = 1;
+    }
+}
+
+setInterval(switchImages, 5000);
